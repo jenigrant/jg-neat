@@ -20,9 +20,8 @@ function generateCloud(id, min, max, parentElem) {
       "id" : "cloud-" + id,
       "css" : {
         "position" : "absolute",
-        "height" : 300 + "px",
-        "width" :  800 + "px",
-        "z-index" : 99
+        "z-index" : 99,
+        "border" : "1px solid red"
       }
   }).prependTo(parentElem);
 
@@ -30,51 +29,41 @@ function generateCloud(id, min, max, parentElem) {
 
   var cloudElem1 = $("<span/>", {
       "css" : {
-          "display" : "inline-block",
-          "background-color" : "white",
-          "border-color" : "red",
           "height" : (cloudWidth / 4) * 2.8 + "px", //height and width must be the same
           "width" : (cloudWidth / 4) * 2.8 + "px",
           "border-radius" : (cloudWidth / 4) * 2.8 + "px",
-          "position" : "relative",
           "top" : "-5px",
-          "left" : "auto",
           "right" :  ((cloudWidth / 4) * 3) + "px",
-          "vertical-align" : "middle"
       }
   }).prependTo(cloud);
 
   var cloudElem2 = $("<span/>", {
       "css" : {
-        "display" : "inline-block",
-        "background-color" : "white",
-        "border-color" : "blue",
         "height" : cloudHeight + "px",
         "width" : cloudWidth + "px",
         "border-radius" : cloudHeight + "px",
-        //"box-shadow" : "0 5px 7px 0 rgba(167, 167, 167, .5)",
-        "vertical-align" : "middle"
       }
   }).prependTo(cloud);
 
 var cloudElem3 = $("<span/>", {
       "css" : {
-        "display" : "inline-block",
-        "background-color" : "white",
-        "border-color" : "green",
         "height" : cloudHeight * 1.5 + "px",
         "width" : cloudWidth / 2.33 + "px",
         "border-radius" : cloudHeight * 1.5 + "px",
-        //"box-shadow" : "0 5px 7px 0 rgba(167, 167, 167, .5)",
-        "position" : "relative",
         "left" : (cloudWidth / 2) + "px",
-        "top" : "0",
         "transform" : "rotate(30deg)",
-        "vertical-align" : "middle"
       }
   }).prependTo(cloud);
 
+  console.log("css.height: " + $(cloud).css.height);
+  console.log("cloud.height(): " + cloud.height());
+
+
   $(cloud).draggable();
+  $(cloud).css.height = cloud.height();
+  $(cloud).css.width = cloud.width();
+
+
 
  return cloud;
 
@@ -128,8 +117,6 @@ var cloudElem3 = $("<span/>", {
 
 function placeCloud(cloud) {
 
-console.log("cloud: " + $("#hero").parent().height());
-
 var cloudLeft = getRandomInt(1, $(cloud).parent().width() - 300);
 var cloudTop = getRandomInt(1, 450); //hardcoding here, tsk.
 
@@ -145,7 +132,7 @@ $(cloud).css ({
 }
 
 function animateCloud() {
-
+  
 }
 
 function raiseStorm(min, max, minheight, minwidth, parent) {

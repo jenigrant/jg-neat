@@ -1,0 +1,11 @@
+{
+  "name": "jenigrantcom",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {
+    "bourbon": "~4.0.1",
+    "neat": "~1.6.0",
+    "jquery": "~1.11.0"
+  },
+  "devDependencies": {}
+}

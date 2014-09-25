@@ -1,0 +1,156 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 9]>      <html class="no-js" lang="en"> <![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>jenigrant.com</title>
+    <meta name="author" content="Jeni Grant">
+    <meta name="description" content="UX Design and Development">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Cabin:400,500,600,700,500italic,600italic,700italic' rel='stylesheet' type='text/css'>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+<body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+
+                <header>
+                    <h1>Jeni Grant</h1>
+                    <nav>
+                        <ul>
+                            <li>About Me</a></li>
+                            <li>Resume</a></li>
+                            <li>Portfolio</a></li>
+                            <li>Contact</a></li>
+                            <li>Blog</a></li>
+                        </ul>
+                    </nav>
+                    <div id="logo"><img src="/images/logoform.png" alt="[Logo]"/></div>
+                </header>
+
+
+                <main>
+                <article>
+
+                    <div id="hero">
+                        <h2>I'm a user experience designer</h2>
+                        <h3>who can make even the most complex problems <br> <span class="fade">dissappear.</span></h3>
+                    </div>
+                    
+                    <section id="summary">
+                        <ul>
+                            <li class="text">
+                                <h4>Award-Winning UX Design</h4>
+                                <p><!--I create elegant and user-friendly experiences. From initial concept to production deployment, I collaborate with teams to build innovative interfaces that delight users with their ease of use.-->Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer <strong>User research</strong> id erat quis felis dignissim ullamcorper. Welit in dapibus lacinia <strong>asset analysis</strong> lacus urna, <strong>personas</strong> lobortis magna id, laoreet <strong>wireframes</strong> massa. Suspendisse <strong>usability testing</strong> in blandit velit. Ut sit amet tortor vestibulum, luctus risus at, posuere orci. Nunc vel vulputate magna. Nunc aliquam odio lacus, sed elementum tellus maximus quis.  </p>
+                            </li>
+                            <li class="text">
+                                <h4>Talented Front-End Development</h4>
+                                <p><!--Coding isn't just a day job; it's a hobby and a passion. I read <strong>HTML5</strong> specs for fun, debate the finer points of <strong>frameworks</strong>, and love my text editor.-->Lorem ipsum dolor sit amet, <strong>progressive enhancement</strong> consectetur adipiscing elit. Integer id erat quis <strong>HTML5, CSS3, Javascript</strong> felis dignissim ullamcorper. Quisque <strong>accessibility</strong> including ARIA and <strong>Section 508</strong>lobortis velit in dapibus lacinia. Vivamus lacus urna, <strong>semantic web</strong> vestibulum lobortis magna id, <strong>responsive web design</strong> laoreet tincidunt massa. Suspendisse in blandit velit. Ut sit amet tortor vestibulum, luctus risus at, posuere orci. </p>
+                            </li>
+                            <li class="text">
+                                <h4>Plenty of Real World Experience</h4>
+                                <p><!--18 years of experience with Adobe Photoshop &amp; Illustrator; familiar with most Adobe Creative Cloud applications.-->Lorem <strong>Adobe Creative Cloud</strong> ipsum dolor sit amet, consectetur adipiscing elit. Integer id erat quis felis dignissim ullamcorper. Quisque lobortis velit in dapibus <strong>Axure, Balsamiq, OmniGraffle</strong> lacinia. Vivamus lacus urna, vestibulum lobortis magna id, laoreet <strong>Grunt</strong> tincidunt <strong>SASS</strong> massa. Suspendisse in blandit velit. Ut sit amet tortor vestibulum, luctus risus at, posuere orci. Nunc vel vulputate magna. Nunc aliquam odio lacus, sed elementum tellus maximus quis.</p>
+                            </li>
+                       </ul>
+                    </section>
+                    
+                    <section id="experience">
+
+                        <h3>Selected Experience:</h3>
+                           
+                        <div class="job">
+                            <h4><strong>UX Designer</strong>; iContact; Durham, NC</h4>
+                            <h5>12/05-7/06</h5>
+                            
+                            <ul>
+                                <li><strong><em>200% growth in first quarter after product relaunch; listed #1 Web 2.0 Marketing Application for 2007 by SEOMoz.</em></strong></li>
+                                <li>Redesigned existing web applications based on user feedback and extensive usability testing.</li>
+                                <li>Developed technical and design specifications, project time lines, and workflow diagrams.</li>
+                                <li>Assisted in creating and implementing marketing plans; analyzed marketing trends and data.</li>
+                                <li>Produced new print and online collateral, email marketing templates, and other designs as needed.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="job">
+                            <h4><strong>Web Designer</strong>; Sports Endeavors; Hillsborough, NC</h4>
+                            <h5>8/04-8/05</h5>
+                            
+                            <ul>
+                                <li>Optimized large e-commerce websites based on results of in-house usability testing and customer feedback.</li>
+                                <li>Developed interactive site features, including database-driven and Flash-based applications.</li>
+                                <li>Worked closely with departmental leads and vendors to ensure design and data quality.</li>
+                                <li>Created promotional email advertisements and newsletters targeting over 100,000 subscribers.</li>
+                            </ul>
+                        </div>
+                        
+                        
+                        <div class="job">
+                            <h4><strong>Web Administrator</strong>; Koroberi Marketing; Chapel Hill, NC</h4>
+                            <h5>3/02-7/03</h5>
+                            <ul>
+                                <li><em>Team Recipient of 2004 American Advertising Association Regional Addy Award</em></li>
+                                <li>Created and updated client sites using technologies like .NET, XHTML 1.0, CSS-2, Javascript/DOM, and XML/XSLT.</li>
+                                <li>Served as editor and proofreader for public agency communications; wrote new copy and updated existing copy.</li>
+                                <li>Developed online promotions, including Flash animations, email advertisments and newsletters, and brochure sites.</li>
+                                <li>Administered agency and client servers, maintained all agency IT assets including internal network and printers.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="job">
+                            <h4><strong>Web Developer</strong>; USPS Account, EDS; Raleigh, NC</h4>
+                            <h5>10/00-9/01</h5>
+                        </div>
+                        
+                        <div class="job">
+                            <h4><strong>Web Page Technician</strong>; ECU; Greenville, NC (contract position)</h4>
+                            <h5>5/00-9/00</h5>
+                        </div>
+                    
+                        <div class="job">
+                            <h4><strong>Assistant Systems Programmer</strong>; NCSU; Raleigh, NC</h4>
+                            <h5>1/98-1/00</h5>
+                        </div>
+                    
+                    <br style="clear:both;">
+                </section>
+            </article>
+        </main><!-- .main -->
+
+<footer>
+    Brought to you by the brilliant people at <a href="http://koolth.com.au">koolth</a>
+</footer><!-- .footer -->
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+
+
+<script type="text/javascript" src="/scripts/main.js"></script>
+</body>
+</html>

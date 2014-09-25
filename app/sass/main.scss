@@ -1,0 +1,285 @@
+@import 'bourbon';
+@import 'base/base';
+@import 'neat';
+
+@import 'base/clouds';
+
+$linkColor: #4183C4;
+$hoverColor: lighten($linkColor, 10);
+$borderColor: #b3b3b3;
+
+body {
+	//@include outer-container;
+	//@include span-columns(12);
+	//@include margin(25px null 25px null);
+	font-family: $helvetica;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+
+}
+
+/*.container {
+	@include span-columns(12);
+	@include margin(25px null 25px null);
+	//padding: 20px;
+	//@include border-top-radius(5px);
+	//@include border-bottom-radius(5px);
+	//border: 1px solid $borderColor;
+	//box-shadow: 0 1px 10px #a7a7a7, inset 0 1px 0 #fff;
+	background-color: white;
+
+}  */
+
+	$navigation-padding: 1em;
+    $navigation-logo-height: em(125);
+    $navigation-background: $dark-blue;
+    $navigation-color: lighten($base-font-color, 80%);
+    $navigation-color-hover: $base-font-color;
+    $navigation-height: em(75);
+    $navigation-item-padding: 1em;
+    $navigation-submenu-padding: 1em;
+    $navigation-submenu-width: 12em;
+    $navigation-item-nudge: 1em;
+    $horizontal-bar-mode: $large-screen;
+
+
+header {
+	@include outer-container;
+	background-color: $dark-blue;
+    color: lighten($base-font-color, 80%);
+    height: em(75);
+    margin: 2em auto;
+	position: relative;
+	border-bottom: 1px solid darken($dark-blue, 2%);
+	box-shadow: 0 5px 7px 0 rgba($dark-gray, .5);
+
+    #logo {
+    	position: absolute;
+    	height: 150px;
+    	
+    	img {
+    		position: absolute !important;
+    		top: -1.75em;
+    		left: .75em;
+    		min-width: em(150);
+    		max-height: em(150);
+    		z-index: $z-index-5;
+   			box-shadow: 0 5px 7px 0 rgba($dark-gray, .5);
+   			border-radius: 50%;
+    	}
+    }
+
+	h1 {
+		@include span-columns(6);
+		display: inline-block;
+		max-height: $navigation-height;
+		font-size: 3.5em;
+		padding: 0;
+		margin: 0;
+		font-weight: 125%;
+		padding-left: 3.25em;
+	}
+
+	nav {
+		@include span-columns(6);
+		@include omega();
+		display: inline-block;
+
+		ul {
+			-webkit-transform-style: preserve-3d; 
+			// stop webkit flicker
+			//clear: both;
+			display: none;
+			margin: 0 auto;
+			overflow: visible;
+			padding: 0;
+			//width: 100%;
+			z-index: $z-index-4;
+
+	        @include media ($horizontal-bar-mode) {
+	            display: block;
+	            text-align: right;
+	        }
+
+			li {
+		        background: $navigation-background;
+		        display: block;
+		        max-height: $navigation-height;
+		        overflow: hidden;
+		        padding-right: $navigation-submenu-padding;
+		        text-align: right;
+		        width: 100%;
+		        z-index: $z-index-4 + 1;
+		        vertical-align: center;
+
+		        @include media($horizontal-bar-mode) {
+		            background: transparent;
+		            display: inline;
+		            line-height: $navigation-height;  
+
+		            a {
+		                padding-right: $navigation-item-padding;
+		            }
+		        }
+
+		        a {
+		            color: $navigation-color;
+		            display: inline-block;
+		            vertical-align: middle;
+
+		            &:hover {
+		                color: $navigation-color-hover;
+		            }
+		        }
+			}
+		}
+	}
+}
+
+main {
+	article {
+		@include outer-container;
+		margin: 0;
+		padding: 0;
+
+		#hero {
+			margin: -9em auto 0;
+			padding: 12em 5em;
+			text-align: center;
+			
+
+			@include linear-gradient(to bottom, $medium-blue, $lighter-blue);
+
+			.fade {
+				font-size: 3em !important;
+				line-height: 1.25em;
+				color: $base-font-color;
+				text-decoration: none;
+			}
+
+		}
+
+		#summary {
+			@include outer-container; 
+			@include pad;
+			ul {
+				text-align: justify;
+				li {
+					@include span-columns(4);
+					@include pad(default / 2);
+					display: block;
+
+				   	&:first-child h4:before {
+				   		border-color: rgba($burgundy, .5) !important;
+				   		background-color: rgba($burgundy, .5) !important;
+				   	}
+
+					&:last-child {
+						border: 0;
+
+			   			h4:before{
+							border-color: rgba($dark-blue, .5) !important;
+			   				background-color: rgba($dark-blue, .5) !important;
+			   			}
+					}
+
+					h4 {
+						min-width: 100%;
+						line-height: 3.5em;
+						text-align: center;
+						font-size: 1.5em;
+
+						&:before {
+							display: block;
+							content: ' ';
+							border-color: rgba($gold, .5);
+							border-radius: 50%;
+							background-color: rgba($gold, .5);
+							min-height: 2em;
+							min-width: 2em;
+							height: 3em;
+							width: 3em;
+				   			box-shadow: 0 1px 2px 0 rgba($dark-gray, .5);
+				   			line-height: 3.5em;
+				   			margin: 0 auto;
+				   			clear: both;
+
+						}
+					}
+
+					p {
+//						margin-left: 5.5em;
+
+						strong {
+							background-color: rgba($light-blue, .25);
+							overflow: visible;
+							line-height: 1em;
+							padding: .1em .5em;
+						}
+					}
+				}	
+			}
+		}
+
+		#experience {
+			@include outer-container;
+			@include pad;
+
+			@include linear-gradient(to bottom, $lighter-blue, $medium-blue);
+
+		}
+
+		h4 {
+			@include span-columns(8);
+		}
+
+		h5 {
+			@include span-columns(4);
+			@include omega();
+
+			float: right;
+			text-align: right;
+			clear: right;
+		}
+
+		.job {
+			@include span-columns(12);
+			display: block;
+			margin: 1em auto;
+			clear: both;
+		}
+	}
+}
+
+footer {
+	padding: 10px;
+	font-size: em(14);
+	color: grey;
+	text-align: center;
+	a {
+		color: #0081C6;
+		&:hover {
+			color: $hoverColor;	
+		}
+	}
+}
+a {
+	color: $linkColor;
+	text-decoration: none;
+	&:hover {
+		color: $hoverColor;
+	}
+}
+h3 {
+	margin-bottom: 0;
+}
+p {
+	margin-top: 5px;
+}
+
+
+
+
+
+

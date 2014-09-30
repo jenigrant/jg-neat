@@ -40,10 +40,10 @@ module.exports = function (grunt) {
                     livereload: true
                 }
             },
-            jstest: {
-                files: ["test/spec/{,*/}*.js"],
-                tasks: ["test:watch"]
-            },
+            //jstest: {
+            //   files: ["test/spec/{,*/}*.js"],
+            //    tasks: ["test:watch"]
+            //}, 
             gruntfile: {
                 files: ["Gruntfile.js"]
             },
@@ -74,7 +74,7 @@ module.exports = function (grunt) {
                 open: true,
                 livereload: 35729,
                 // Change this to "0.0.0.0" to access the server from outside
-                hostname: "localhost"
+                hostname: "0.0.0.0"
             },
             livereload: {
                 options: {
@@ -87,7 +87,7 @@ module.exports = function (grunt) {
                     }
                 }
             },
-            test: {
+            /* test: {
                 options: {
                     open: false,
                     port: 9001,
@@ -100,7 +100,7 @@ module.exports = function (grunt) {
                         ];
                     }
                 }
-            },
+            }, */
             dist: {
                 options: {
                     base: "<%= config.dist %>",
@@ -139,14 +139,14 @@ module.exports = function (grunt) {
         },
 
         // Mocha testing framework configuration options
-        mocha: {
+        /* mocha: {
             all: {
                 options: {
                     run: true,
                     urls: ["http://<%= connect.options.hostname %>:<%= connect.test.options.port %>/index.html"]
                 }
             }
-        },
+        }, */
 
         // Compiles Sass to CSS and generates necessary files if requested
         sass: {
@@ -369,7 +369,7 @@ module.exports = function (grunt) {
         grunt.task.run([target ? ("serve:" + target) : "serve"]);
     });
 
-    grunt.registerTask("test", function (target) {
+    /* grunt.registerTask("test", function (target) {
         if (target !== "watch") {
             grunt.task.run([
                 "clean:server",
@@ -382,7 +382,7 @@ module.exports = function (grunt) {
             "connect:test",
             "mocha"
         ]);
-    });
+    }); */
 
     grunt.registerTask("build", [
         "clean:dist",
@@ -400,7 +400,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask("default", [
         "newer:jshint",
-        "test",
+        //"test",
         "build"
     ]);
 };

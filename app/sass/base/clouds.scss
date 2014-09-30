@@ -1,12 +1,13 @@
 .cloud span {
     display: inline-block;
     background-color: white;
-    border-color: red;
+    border-color: white;
     position: relative;
     vertical-align: middle;
     overflow: hidden;
     height: 100%;
     width: 100%;
+    z-index: $z-index-2;
 }
 
 .cloud {

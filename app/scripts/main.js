@@ -20,8 +20,8 @@ function generateCloud(id, min, max, parentElem) {
       "id" : "cloud-" + id,
       "css" : {
         "position" : "absolute",
-        "z-index" : 99,
-        "border" : "1px solid red"
+        "z-index" : "999",
+        "opacity" : ".75",
       }
   }).prependTo(parentElem);
 
@@ -42,6 +42,7 @@ function generateCloud(id, min, max, parentElem) {
         "height" : cloudHeight + "px",
         "width" : cloudWidth + "px",
         "border-radius" : cloudHeight + "px",
+        "z-index" : "999",
       }
   }).prependTo(cloud);
 
@@ -52,6 +53,7 @@ var cloudElem3 = $("<span/>", {
         "border-radius" : cloudHeight * 1.5 + "px",
         "left" : (cloudWidth / 2) + "px",
         "transform" : "rotate(30deg)",
+        "z-index" : "999",
       }
   }).prependTo(cloud);
 
@@ -62,7 +64,7 @@ var cloudElem3 = $("<span/>", {
   $(cloud).draggable();
   $(cloud).css.height = cloud.height();
   $(cloud).css.width = cloud.width();
-
+  $("#hero h2").css.zindex = 999999;
 
 
  return cloud;

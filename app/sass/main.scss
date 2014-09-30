@@ -142,16 +142,22 @@ main {
 		@include outer-container;
 		margin: 0;
 		padding: 0;
-		overflow: hidden;
+		//overflow: hidden;
 
 		#hero {
 			margin: -9em auto 0;
 			padding: 12em 5em;
 			text-align: center;
-			overflow: hidden;
+			//overflow: hidden;
 			
 
 			@include linear-gradient(to bottom, $medium-blue, $lighter-blue);
+
+			h2, h3 {
+				position: relative;
+				top: 0;
+				left: 0;
+			}
 
 			.fade {
 				font-size: 3em !important;

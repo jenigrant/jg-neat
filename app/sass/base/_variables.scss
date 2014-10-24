@@ -12,12 +12,12 @@ $header-line-height: $base-font-size * 1.25;
 $base-border-radius: em(3);
 
 // Z-Indexes
-$z-index-0: -99;
-$z-index-1: 99;
-$z-index-2: 999;
-$z-index-3: 9999;
-$z-index-4: 99999;
-$z-index-5: 999999;
+$z-index-0: -99; 
+$z-index-1: 99;         //backgrounds
+$z-index-2: 999;        //animation and icons
+$z-index-3: 9999;       //text
+$z-index-4: 99999;      //navigation
+$z-index-5: 999999;     //modals
 
 // Colors
 $blue: #477DCA;

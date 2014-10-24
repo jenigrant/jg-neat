@@ -146,17 +146,22 @@ main {
 
 		#hero {
 			margin: -9em auto 0;
-			padding: 12em 5em;
+			padding: 20% 20%;
 			text-align: center;
 			//overflow: hidden;
 			
 
 			@include linear-gradient(to bottom, $medium-blue, $lighter-blue);
 
+			background-image: url('/images/uxd-hero-tint-warm.jpg');
+			background-size: 100%;
+			background-position: 35% 50%;
+
 			h2, h3 {
 				position: relative;
-				top: 0;
+				top: 1em;
 				left: 0;
+				color: white;
 			}
 
 			.fade {

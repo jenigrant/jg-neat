@@ -70,8 +70,8 @@ module.exports = function (grunt) {
         // The actual grunt server settings
         connect: {
             options: {
-                port: 9000,
-                open: false,
+                //port: 80,
+                //open: false,
                 livereload: 35729,
                 // Change this to "0.0.0.0" to access the server from outside
                 hostname: "0.0.0.0"
@@ -343,8 +343,8 @@ module.exports = function (grunt) {
             dist: [
                 "sass",
                 "copy:styles",
-                "imagemin",
-                "svgmin"
+                //"imagemin",
+                //"svgmin"
             ]
         }
     });
@@ -391,11 +391,11 @@ module.exports = function (grunt) {
         "autoprefixer",
         "concat",
         "cssmin",
-        "uglify",
+        //"uglify",
         "copy:dist",
         "rev",
         "usemin",
-        "htmlmin"
+        //"htmlmin"
     ]);
 
     grunt.registerTask("default", [

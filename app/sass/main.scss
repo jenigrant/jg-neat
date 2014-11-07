@@ -5,9 +5,6 @@
 @import 'layout/layout';
 @import 'base/clouds';
 
-$linkColor: #4183C4;
-$hoverColor: lighten($linkColor, 10);
-$borderColor: #b3b3b3;
 
 body {
 	font-family: $helvetica;

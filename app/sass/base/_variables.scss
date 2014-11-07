@@ -52,6 +52,9 @@ $base-link-color: $base-accent-color;
 $hover-link-color: darken($base-accent-color, 15);
 $base-button-color: $base-link-color;
 $hover-button-color: $hover-link-color;
+$linkColor: #4183C4;
+$hoverColor: lighten($linkColor, 10);
+$borderColor: #b3b3b3;
 
 // Border color
 $base-border-color: $light-gray;
@@ -71,15 +74,3 @@ $form-box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
 $form-font-size: $base-font-size;
 $form-font-family: $base-font-family;
-
-//navigation
-$navigation-padding: 1em;
-$navigation-logo-height: em(125);
-$navigation-background: $dark-blue;
-$navigation-color: lighten($base-font-color, 80%);
-$navigation-color-hover: $base-font-color;
-$navigation-height: em(75);
-$navigation-item-padding: 1em;
-$navigation-submenu-padding: 1em;
-$navigation-submenu-width: 12em;
-$navigation-item-nudge: 1em;

@@ -1,0 +1,161 @@
+main {
+	article {
+		@include outer-container;
+		margin: 0;
+		padding: 0;
+
+		#hero {
+			margin: -9em auto 0;
+			text-align: center;
+			background-image: url('/images/hero-plain.jpg');
+			background-color: $light-blue;
+			background-size: 100%;
+			background-position: left 60%;
+			background-attachment: fixed;
+
+			#hero-hand {
+				position: relative;
+				height: 100%;
+				width: 100%;
+				padding: 12.5% 15% 15%;
+				z-index: $z-index-2 !important;
+				text-align: center;
+			}
+
+			h2, h3 {
+				color: $gold;
+				height: 100%;
+				text-shadow: 2px 2px 1px black, 1px 1px 0.5em white;
+				font-size: 3em;
+			}
+		}
+
+		#summary {
+			@include outer-container; 
+			@include pad;
+			ul {
+				text-align: justify;
+				li {
+					@include span-columns(4);
+					@include pad(default / 2);
+					display: block;
+
+				   	&:first-child h4:before {
+				   		border-color: rgba($gold, .75) !important;
+				   		background-color: rgba($gold, .75) !important;
+				   		box-shadow: 0 1px 2px 0 rgba($medium-gray, .75);
+				   	}
+
+					&:last-child {
+						border: 0;
+
+			   			h4:before{
+							border-color: rgba($burgundy, .75) !important;
+			   				background-color: rgba($burgundy, .75) !important;
+			   				box-shadow: 0 1px 2px 0 rgba($medium-gray, .75);
+			   			}
+					}
+
+					h4 {
+						min-width: 100%;
+						line-height: 3.5em;
+						text-align: center;
+						font-size: 1.5em;
+
+						&:before {
+							display: block;
+							content: ' ';
+							border-color: rgba($dark-blue, .75);
+							border-radius: 50%;
+							background-color: rgba($dark-blue, .75);
+							min-height: 2em;
+							min-width: 2em;
+							height: 3em;
+							width: 3em;
+				   			box-shadow: 0 1px 2px 0 rgba($medium-gray, .75);
+				   			line-height: 3.5em;
+				   			margin: 0 auto;
+				   			clear: both;
+
+						}
+					}
+
+					p {
+						strong {
+							background-color: rgba($light-blue, .25);
+							overflow: visible;
+							line-height: 1em;
+							padding: .1em .5em;
+						}
+					}
+				}	
+			}
+		}
+
+		#process {
+			@include outer-container;
+			@include span-columns(12);
+
+			background-image: url('/images/quote-tools.jpg');
+			background-color: $light-blue;
+			background-attachment: fixed;
+			background-size: 100%;
+			background-position: left 33%;
+			vertical-align: middle;
+			margin: auto;
+
+			h3 {
+				@include pad;
+				
+				color: $gold;
+				height: 100%;
+				padding: 5% auto;
+				text-shadow: 1px 1px 2px black, 2px 2px 0.75em white;
+				text-align: center;
+				vertical-align: middle;
+			}
+		}
+
+		#experience {
+			@include outer-container;
+			@include pad;
+
+			//@include linear-gradient(white 70%, black);
+
+			h3 {
+				@include span-columns(12);
+				@include pad;
+				
+				color: $gold;
+				height: 100%;
+				padding: 5% auto;
+				text-shadow: 1px 1px 2px black, 2px 2px 0.75em white;
+				text-align: center;
+				vertical-align: middle;
+			}
+		}
+
+		#contact {
+			@include outer-container;
+			@include pad;
+
+			background-color: $light-gray;
+			background-image: url('/images/contact-keyboard.jpg');
+			background-position: left 25%;
+			background-size: 100%;
+
+			h3 {
+				color: $gold;
+				height: 100%;
+				padding: 5% auto;
+				text-shadow: 1px 1px 2px black, 2px 2px 0.75em white;
+				text-align: center;
+				vertical-align: middle;
+			}
+
+			p {
+				text-align: center;
+			}
+		}
+	}
+}

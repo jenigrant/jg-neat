@@ -1,0 +1,54 @@
+	nav {
+		@include span-columns(6);
+		@include omega();
+		display: inline-block;
+
+		ul {
+			-webkit-transform-style: preserve-3d; 
+			// stop webkit flicker
+			//clear: both;
+			display: none;
+			margin: 0 auto;
+			overflow: visible;
+			padding: 0;
+			//width: 100%;
+			z-index: $z-index-4;
+
+	        @include media ($horizontal-bar-mode) {
+	            display: block;
+	            text-align: right;
+	        }
+
+			li {
+		        background: $navigation-background;
+		        display: block;
+		        max-height: $navigation-height;
+		        overflow: hidden;
+		        padding-right: $navigation-submenu-padding;
+		        text-align: right;
+		        width: 100%;
+		        z-index: $z-index-4 + 1;
+		        vertical-align: center;
+
+		        @include media($horizontal-bar-mode) {
+		            background: transparent;
+		            display: inline;
+		            line-height: $navigation-height;  
+
+		            a {
+		                padding-right: $navigation-item-padding;
+		            }
+		        }
+
+		        a {
+		            color: $navigation-color;
+		            display: inline-block;
+		            vertical-align: middle;
+
+		            &:hover {
+		                color: $navigation-color-hover;
+		            }
+		        }
+			}
+		}
+	}

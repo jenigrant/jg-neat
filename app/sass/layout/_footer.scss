@@ -1,0 +1,19 @@
+footer {
+	background-color: black;
+	padding: 10px;
+	font-size: em(14);
+	color: white;
+	text-align: center;
+
+	p {
+		padding: 0;
+		margin: .5em;
+	}
+
+	a {
+		color: #0081C6;
+		&:hover {
+			color: $hoverColor;	
+		}
+	}
+}

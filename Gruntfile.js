@@ -239,7 +239,7 @@ module.exports = function (grunt) {
         imagemin: {
             dist: {
                 files: [{
-                    //expand: true,
+                    expand: true,
                     cwd: "<%= config.app %>/images",
                     src: "{,*/}*.{gif,jpeg,jpg,png}",
                     dest: "<%= config.dist %>/images"
@@ -395,7 +395,7 @@ module.exports = function (grunt) {
         "copy:dist",
         "rev",
         "usemin",
-        //"htmlmin"
+        "htmlmin"
     ]);
 
     grunt.registerTask("default", [

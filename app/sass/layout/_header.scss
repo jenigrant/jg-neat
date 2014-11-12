@@ -11,6 +11,8 @@ $navigation-submenu-width: 12em;
 $navigation-item-nudge: 1em;
 $horizontal-bar-mode: $large-screen;
 
+@import '../modules/navigation';
+
 header {
 	@include outer-container;
 	background-color: $dark-blue;
@@ -19,7 +21,9 @@ header {
     margin: 2em auto;
 	position: relative;
 	border-bottom: 1px solid darken($dark-blue, 2%);
-	box-shadow: 0 5px 7px 0 rgba($dark-gray, .5);
+	box-shadow: 0 3px 5px 0 rgba($dark-gray, .5);
+                z-index: $z-index-4;
+
 
     #logo {
     	position: absolute;
@@ -48,5 +52,8 @@ header {
 		padding-left: 3.25em;
 	}
 
-	@import '../modules/navigation';
+    nav {
+        @include span-columns(6);
+        @include omega();
+    }
 }

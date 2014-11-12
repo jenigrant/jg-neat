@@ -4,11 +4,19 @@ main {
 		margin: 0;
 		padding: 0;
 
+		h3 {
+			color: $gold;
+			height: 100%;
+			padding: 5% auto;
+			text-align: center;
+			text-shadow: 1px 1px 2px black, 2px 2px 0.75em white;
+			vertical-align: middle;
+		}
+
 		#hero {
 			margin: -9em auto 0;
 			text-align: center;
 			background-image: url('/images/hero-plain.jpg');
-			background-color: $light-blue;
 			background-size: 100%;
 			background-position: left 60%;
 			background-attachment: fixed;
@@ -40,43 +48,56 @@ main {
 					@include pad(default / 2);
 					display: block;
 
-				   	&:first-child h4:before {
-				   		border-color: rgba($gold, .75) !important;
+				   	&:first-child h3:before {
 				   		background-color: rgba($gold, .75) !important;
+				   		background-image: url('../bower_components/material-design-icons/social/2x_web/ic_mood_white_24dp.png');
+				   		background-position: center 50%;
+				   		background-repeat: no-repeat;
+				   		border-color: rgba($gold, .75) !important;
 				   		box-shadow: 0 1px 2px 0 rgba($medium-gray, .75);
+				   		color: white;
+
 				   	}
 
 					&:last-child {
 						border: 0;
 
-			   			h4:before{
-							border-color: rgba($burgundy, .75) !important;
+			   			h3:before{
 			   				background-color: rgba($burgundy, .75) !important;
+					   		background-image: url('../bower_components/material-design-icons/action/2x_web/ic_favorite_white_24dp.png');
+					   		background-position: center 50%;
+					   		background-repeat: no-repeat;
+							border-color: rgba($burgundy, .75) !important;
 			   				box-shadow: 0 1px 2px 0 rgba($medium-gray, .75);
 			   			}
 					}
 
-					h4 {
+					h3 {
+						color: black;
+						box-shadow: none;
 						min-width: 100%;
 						line-height: 3.5em;
 						text-align: center;
+						text-shadow: none;
 						font-size: 1.5em;
 
 						&:before {
-							display: block;
-							content: ' ';
+							background-color: rgba($dark-blue, .75);
+					   		background-image: url('../bower_components/material-design-icons/hardware/2x_web/ic_computer_white_24dp.png');
+					   		background-position: center 50%;
+					   		background-repeat: no-repeat;
 							border-color: rgba($dark-blue, .75);
 							border-radius: 50%;
-							background-color: rgba($dark-blue, .75);
-							min-height: 2em;
-							min-width: 2em;
-							height: 3em;
-							width: 3em;
 				   			box-shadow: 0 1px 2px 0 rgba($medium-gray, .75);
+				   			clear: both;
+							content: ' ';
+							display: block;
+							height: 3em;
 				   			line-height: 3.5em;
 				   			margin: 0 auto;
-				   			clear: both;
-
+							min-height: 2em;
+							min-width: 2em;
+							width: 3em;
 						}
 					}
 
@@ -95,6 +116,7 @@ main {
 		#process {
 			@include outer-container;
 			@include span-columns(12);
+			@include pad;
 
 			background-image: url('/images/quote-tools.jpg');
 			background-color: $light-blue;
@@ -109,7 +131,6 @@ main {
 				
 				color: $gold;
 				height: 100%;
-				padding: 5% auto;
 				text-shadow: 1px 1px 2px black, 2px 2px 0.75em white;
 				text-align: center;
 				vertical-align: middle;
@@ -120,18 +141,10 @@ main {
 			@include outer-container;
 			@include pad;
 
-			//@include linear-gradient(white 70%, black);
-
 			h3 {
 				@include span-columns(12);
 				@include pad;
 				
-				color: $gold;
-				height: 100%;
-				padding: 5% auto;
-				text-shadow: 1px 1px 2px black, 2px 2px 0.75em white;
-				text-align: center;
-				vertical-align: middle;
 			}
 		}
 
@@ -143,19 +156,12 @@ main {
 			background-image: url('/images/contact-keyboard.jpg');
 			background-position: left 25%;
 			background-size: 100%;
+			text-align: center;
 
-			h3 {
-				color: $gold;
-				height: 100%;
-				padding: 5% auto;
-				text-shadow: 1px 1px 2px black, 2px 2px 0.75em white;
-				text-align: center;
-				vertical-align: middle;
+			li {
+				height: 50%;
 			}
 
-			p {
-				text-align: center;
-			}
 		}
 	}
 }

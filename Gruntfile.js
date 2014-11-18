@@ -153,7 +153,8 @@ module.exports = function (grunt) {
             options: {
                 loadPath: [
                     "bower_components/bourbon/dist/",
-                    "bower_components/neat/app/assets/stylesheets/"
+                    "bower_components/neat/app/assets/stylesheets/",
+                    "bower_components/material-design-icons/sprites/css-sprite/"
                 ]
             },
             dist: {

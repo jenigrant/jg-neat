@@ -1,59 +1,61 @@
-//navigation
-$navigation-padding: 1em;
-$navigation-logo-height: em(125);
-$navigation-background: $dark-blue;
-$navigation-color: lighten($base-font-color, 80%);
-$navigation-color-hover: $base-font-color;
-$navigation-height: em(75);
-$navigation-item-padding: 1em;
-$navigation-submenu-padding: 1em;
-$navigation-submenu-width: 12em;
-$navigation-item-nudge: 1em;
-$horizontal-bar-mode: $large-screen;
+$header-height: 5rem;
 
 @import '../modules/navigation';
 
 header {
 	@include outer-container;
 	background-color: $dark-blue;
+    border-bottom: 1px solid darken($dark-blue, 2%);
+    box-shadow: 0 3px 5px 0 rgba($dark-gray, .5);
+    clear: both;
     color: lighten($base-font-color, 80%);
-    height: em(75);
-    margin: 2em auto;
+    display: block;
+    height: $header-height;
+    margin: 2em auto 0;
+    padding-bottom: 2em;
 	position: relative;
-	border-bottom: 1px solid darken($dark-blue, 2%);
-	box-shadow: 0 3px 5px 0 rgba($dark-gray, .5);
-                z-index: $z-index-4;
+    vertical-align: middle;
+    z-index: $z-index-4;
 
-
-    #logo {
-    	position: absolute;
-    	height: 150px;
-    	
-    	img {
-    		position: absolute !important;
-    		top: -1.75em;
-    		left: .75em;
-    		min-width: em(150);
-    		max-height: em(150);
-    		z-index: $z-index-5;
-   			box-shadow: 0 5px 7px 0 rgba($dark-gray, .5);
-   			border-radius: 50%;
-    	}
-    }
 
 	h1 {
-		@include span-columns(6);
+        color: white !important;
 		display: inline-block;
-		max-height: $navigation-height;
-		font-size: 3.5em;
-		padding: 0;
-		margin: 0;
+        font-size: 3rem;
 		font-weight: 125%;
-		padding-left: 3.25em;
-	}
+        max-width: 100%;
+        overflow: visible;
+        position: relative;
+        top: -$header-height / 10;
+        vertical-align: middle;
 
-    nav {
-        @include span-columns(6);
-        @include omega();
-    }
+        @include media($medium-screen) {
+            font-size: 3.25rem;
+        }
+        @include media($large-screen){
+            @include span-columns(6);
+            float: left;
+            font-size: 3.5rem;            
+        }
+
+        a, a:hover {
+            color: white;
+        }
+
+        &:before {
+            background-color: transparent;
+            background-size: 100% 100%;
+            background-image: url('/images/logoform.png');            
+            background-repeat: no-repeat;
+            clear: none;
+            content: ' ';
+            display: inline-block;
+            height: 2em;
+            margin: 0 .33em;
+            min-height: 2em;
+            min-width: 2em;
+            position: relative;
+            vertical-align: middle;
+        }
+	}
 }

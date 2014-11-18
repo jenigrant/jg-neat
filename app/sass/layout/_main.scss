@@ -4,37 +4,42 @@ main {
 		margin: 0;
 		padding: 0;
 
-		h3 {
+		h2, h3 {
 			color: $gold;
 			height: 100%;
 			padding: 5% auto;
 			text-align: center;
-			text-shadow: 1px 1px 2px black, 2px 2px 0.75em white;
+			text-shadow: 1px 1px 2px black, 2px 2px 1em white;
 			vertical-align: middle;
 		}
 
 		#hero {
-			margin: -9em auto 0;
-			text-align: center;
-			background-image: url('/images/hero-plain.jpg');
-			background-size: 100%;
-			background-position: left 60%;
 			background-attachment: fixed;
+			background-image: url('/images/hero-plain.jpg');
+			background-position: left 0;
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin: -9em auto 2em;
+			text-align: center;
 
-			#hero-hand {
-				position: relative;
-				height: 100%;
+			#hero-header {
+				clear: both;
+				height: 100%;		
+				padding: 11em 15% 15%;
 				width: 100%;
-				padding: 12.5% 15% 15%;
 				z-index: $z-index-2 !important;
-				text-align: center;
 			}
 
 			h2, h3 {
-				color: $gold;
-				height: 100%;
-				text-shadow: 2px 2px 1px black, 1px 1px 0.5em white;
-				font-size: 3em;
+				font-size: 2em;
+
+				@include media($medium-screen) {
+					font-size: 2.5em; 
+				}
+
+				@include media($large-screen) {
+					font-size: 3em; 
+				}
 			}
 		}
 
@@ -44,19 +49,17 @@ main {
 			ul {
 				text-align: justify;
 				li {
-					@include span-columns(4);
 					@include pad(default / 2);
 					display: block;
 
+					@include media($large-screen) {
+						@include span-columns(4);
+					}
+
 				   	&:first-child h3:before {
 				   		background-color: rgba($gold, .75) !important;
-				   		background-image: url('../bower_components/material-design-icons/social/2x_web/ic_mood_white_24dp.png');
-				   		background-position: center 50%;
-				   		background-repeat: no-repeat;
+				   		background-image: url('/images/icons/mood/ic_mood_white_24dp.png');
 				   		border-color: rgba($gold, .75) !important;
-				   		box-shadow: 0 1px 2px 0 rgba($medium-gray, .75);
-				   		color: white;
-
 				   	}
 
 					&:last-child {
@@ -64,26 +67,23 @@ main {
 
 			   			h3:before{
 			   				background-color: rgba($burgundy, .75) !important;
-					   		background-image: url('../bower_components/material-design-icons/action/2x_web/ic_favorite_white_24dp.png');
-					   		background-position: center 50%;
-					   		background-repeat: no-repeat;
+					   		background-image: url('/images/icons/favorite/ic_favorite_outline_white_24dp.png');
 							border-color: rgba($burgundy, .75) !important;
-			   				box-shadow: 0 1px 2px 0 rgba($medium-gray, .75);
 			   			}
 					}
 
 					h3 {
+						box-shadow: none;				   	
 						color: black;
-						box-shadow: none;
+						font-size: 1.5em;						
+						line-height: 3.5em;						
 						min-width: 100%;
-						line-height: 3.5em;
 						text-align: center;
 						text-shadow: none;
-						font-size: 1.5em;
 
 						&:before {
 							background-color: rgba($dark-blue, .75);
-					   		background-image: url('../bower_components/material-design-icons/hardware/2x_web/ic_computer_white_24dp.png');
+					   		background-image: url('/images/icons/computer/ic_computer_white_24dp.png');
 					   		background-position: center 50%;
 					   		background-repeat: no-repeat;
 							border-color: rgba($dark-blue, .75);
@@ -101,14 +101,6 @@ main {
 						}
 					}
 
-					p {
-						strong {
-							background-color: rgba($light-blue, .25);
-							overflow: visible;
-							line-height: 1em;
-							padding: .1em .5em;
-						}
-					}
 				}	
 			}
 		}
@@ -118,13 +110,14 @@ main {
 			@include span-columns(12);
 			@include pad;
 
-			background-image: url('/images/quote-tools.jpg');
-			background-color: $light-blue;
 			background-attachment: fixed;
-			background-size: 100%;
+			background-color: $light-blue;		
+			background-image: url('/images/quote-tools.jpg');
 			background-position: left 33%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin: auto;			
 			vertical-align: middle;
-			margin: auto;
 
 			h3 {
 				@include pad;
@@ -146,22 +139,34 @@ main {
 				@include pad;
 				
 			}
+
+			img {
+				min-height: 200px;
+				max-height: 250px;
+
+				&:before {
+					content: ' ';
+					display: block;
+					height: 50px;
+				}
+			}
 		}
 
 		#contact {
 			@include outer-container;
 			@include pad;
 
+			background-attachment: fixed;
 			background-color: $light-gray;
 			background-image: url('/images/contact-keyboard.jpg');
-			background-position: left 25%;
-			background-size: 100%;
+			background-position: left 75%;
+			background-repeat: no-repeat;
+			background-size: cover;
 			text-align: center;
-
-			li {
-				height: 50%;
+		
+			@include media($large-screen) {
+				background-size: auto;
 			}
-
 		}
 	}
 }

@@ -1,7 +1,7 @@
 {
   "name": "jenigrantcom",
   "private": true,
-  "version": "1.8.0",
+  "version": "0.7.5",
   "dependencies": {
     "bourbon": "~4.0.1",
     "neat": "~1.7.0",

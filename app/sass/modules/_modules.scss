@@ -1,7 +1,4 @@
 .floatingbox {
-	@include span-columns(10);
-	@include shift(1);
-
 	background-color: rgba(255, 255, 255, 0.75);
 	border-radius: 1em;
 	color: $dark-gray;
@@ -12,6 +9,12 @@
 }
 
 img.logo {
+    box-shadow: 0 3px 5px 0 rgba($dark-gray, .5);
 	margin: 0 1em;
 	vertical-align: middle;
+}
+
+.wrapper {
+	padding: 1em;
+	clear: both;
 }

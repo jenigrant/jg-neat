@@ -9,16 +9,17 @@ main {
 			height: 100%;
 			padding: 5% auto;
 			text-align: center;
-			text-shadow: 1px 1px 2px black, 2px 2px 1em white;
+			text-shadow: 1px 1px 1px black, 2px 2px 0.5em white;
 			vertical-align: middle;
 		}
 
 		#hero {
 			background-attachment: fixed;
-			background-image: url('/images/hero-plain.jpg');
+			background-image: url('/images/quote-tools.jpg');
 			background-position: left 0;
 			background-repeat: no-repeat;
 			background-size: cover;
+			border-bottom: 1px solid $lighter-gray;
 			margin: -9em auto 2em;
 			text-align: center;
 
@@ -111,9 +112,7 @@ main {
 			@include pad;
 
 			background-attachment: fixed;
-			background-color: $light-blue;		
-			background-image: url('/images/quote-tools.jpg');
-			background-position: left 33%;
+			background-image: url('/images/contact-keyboard.jpg');
 			background-repeat: no-repeat;
 			background-size: cover;
 			margin: auto;			
@@ -124,7 +123,7 @@ main {
 				
 				color: $gold;
 				height: 100%;
-				text-shadow: 1px 1px 2px black, 2px 2px 0.75em white;
+				text-shadow: 1px 1px 1px black, 2px 2px 0.5em white;
 				text-align: center;
 				vertical-align: middle;
 			}
@@ -137,7 +136,8 @@ main {
 			h3 {
 				@include span-columns(12);
 				@include pad;
-				
+
+				text-shadow: 1px 1px 1px black, 2px 2px 0.5em white;		
 			}
 
 			img {
@@ -158,10 +158,10 @@ main {
 
 			background-attachment: fixed;
 			background-color: $light-gray;
-			background-image: url('/images/contact-keyboard.jpg');
-			background-position: left 75%;
+			background-image: url('/images/hero-plain.jpg');
+			background-position: center 75%;
 			background-repeat: no-repeat;
-			background-size: cover;
+			background-size: 100%;
 			text-align: center;
 		
 			@include media($large-screen) {

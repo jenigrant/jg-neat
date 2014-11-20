@@ -157,13 +157,17 @@ main {
 			@include pad;
 
 			background-attachment: fixed;
-			background-color: $light-gray;
-			background-image: url('/images/hero-plain.jpg');
-			background-position: center 75%;
+			background-color: black;
+			background-image: url('/images/wide-tools.jpg');
+			background-position: 50% 85%;
 			background-repeat: no-repeat;
-			background-size: 100%;
+			background-size: cover;
 			text-align: center;
 		
+			@include media($medium-screen) {
+				background-size: auto;
+			}
+
 			@include media($large-screen) {
 				background-size: auto;
 			}

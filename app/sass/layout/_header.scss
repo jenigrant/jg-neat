@@ -58,4 +58,44 @@ header {
             vertical-align: middle;
         }
 	}
+
+    nav {
+        @include media($large-screen) {
+            @include span-columns(6);
+            @include omega;
+    
+            float: right;
+            width: inherit;
+        }
+
+        ul {
+            display: none;
+            border-top: 1px solid white;
+            position: relative;
+            top: 0;
+
+            @include media($large-screen) { 
+                border: none;
+                display: block;                
+                text-align: left;
+            }
+
+            li {
+                background-color: $dark-blue;
+                border-bottom: 1px solid white;
+                display: block;
+                max-height: $header-height;
+                z-index: $z-index-3;
+
+                @include media($large-screen) {
+                    background-color: transparent;
+                    border: none;
+                    display: inline-block;
+                    padding: 0 1em;
+                    text-align: right;
+                    width: inherit;                 
+                }
+            }
+        }
+    }
 }

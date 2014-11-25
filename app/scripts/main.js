@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var menu = $("header>nav>ul"); //.centered-navigation-menu
+  var menu = $("header>nav>ul"); 
   var menuToggle = $("h1");
   var signUp = $(".sign-up");
 
@@ -11,7 +11,12 @@ $(document).ready(function() {
       }
     });
   });
+
+
+  
 });
+
+
 
 
 

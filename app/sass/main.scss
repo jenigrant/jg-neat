@@ -20,10 +20,10 @@ body {
 
 
 a {
-	color: $linkColor;
+	color: $base-link-color;
 	text-decoration: none;
 	&:hover {
-		color: $hoverColor;
+		color: $hover-link-color;
 	}
 }
 

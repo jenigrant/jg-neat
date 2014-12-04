@@ -1,47 +1,51 @@
 body {
-    -webkit-font-smoothing: antialiased;
-    background-color: $base-background-color;
-    color: $base-font-color;
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $unitless-line-height;
+  @include font-feature-settings("kern","liga","frac", "pnum");
+  -webkit-font-smoothing: antialiased;
+  background-color: $base-background-color;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    color: $dark-gold;
+    display: block;
     font-family: $header-font-family;
+    font-weight: normal;    
     line-height: $header-line-height;
     margin: 0;
     text-rendering: optimizeLegibility; // Fix the character spacing for headings
-    font-weight: normal;
+    text-shadow: 1px 1px 1px $dark-gray, 2px 2px 1rem $lighter-blue;
     z-index: $z-index-3;
 }
 
 h1 {
-    font-size: $base-font-size * 3; // 16 * 2.25 = 36px
+  font-size: $h1-font-size;
 }
 
 h2 {
-    font-size: $base-font-size * 2.75; // 16 * 2 = 32px
+  font-size: $h2-font-size;
 }
 
 h3 {
-    font-size: $base-font-size * 2.5; // 16 * 1.75 = 28px
+  font-size: $h3-font-size;
 }
 
 h4 {
-    font-size: $base-font-size * 1.75; // 16 * 1.5 = 24px
+  font-size: $h4-font-size;
 }
 
 h5 {
-    font-size: $base-font-size * 1.5; // 16 * 1.25 = 20px
+  font-size: $h5-font-size;
 }
 
 h6 {
-    font-size: $base-font-size;
+  font-size: $h6-font-size;
 }
 
 p {
-    margin: 0 0 ($base-line-height * .5);
+  margin: 0 0 ($base-spacing / 2);
 }
 
 a {
@@ -95,4 +99,10 @@ cite {
     &:before {
         content: '\2014 \00A0';
     }
+}
+
+strong {
+    font-weight: 200%;
+    background-color: rgba($light-blue, .2); 
+    padding: .25rem;
 }

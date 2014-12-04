@@ -1,14 +1,14 @@
 //navigation
-//$navigation-padding: 1em;
-//$navigation-logo-height: em(125);
+//$navigation-padding: 1rem;
+//$navigation-logo-height: rem(125);
 //$navigation-background: $dark-blue;
 //$navigation-color: lighten($base-font-color, 80%);
 //$navigation-color-hover: $base-font-color;
-//$navigation-height: em(75);
-//$navigation-item-padding: 1em;
-//$navigation-submenu-padding: 1em;
-//$navigation-submenu-width: 12em;
-//$navigation-item-nudge: 1em;
+//$navigation-height: rem(75);
+//$navigation-itrem-padding: 1rem;
+//$navigation-submenu-padding: 1rem;
+//$navigation-submenu-width: 12rem;
+//$navigation-itrem-nudge: 1rem;
 //$horizontal-bar-mode: $large-screen;
 
 
@@ -35,7 +35,7 @@
 				@include media($large-screen) {
 					background-color: transparent;
 					border: none;
-					padding: 0 1em;
+					padding: 0 1rem;
 					width: inherit;					
 				}
 
@@ -46,7 +46,7 @@
 		            vertical-align: middle;
 
 		            &:hover {
-		                color: $gold;
+		                color: $dark-gold;
 		            }
 		        }
 			}

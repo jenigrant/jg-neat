@@ -15,11 +15,9 @@
 
     label {
         cursor: pointer;
-        margin-bottom: 0;
-    }
-
-    label img {
-        display: block;
+        font: inherit;
+        font-size: inherit;
+        font-weight: inherit;
     }
 
     input[type="checkbox"] {

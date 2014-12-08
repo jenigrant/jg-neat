@@ -24,21 +24,24 @@ main {
 			#hero-header {
 				clear: both;
 				height: 100%;		
-				padding: 8rem 15% 12%;
+				padding: 15rem 5rem 7.5rem;
 				width: 100%;
 				z-index: $z-index-2 !important;
+
+				@include media($large-screen) {
+					padding: 7.5rem 5rem 10rem;
+				}
 			}
 
 			h2, h3 {
 				font-size: 2rem;
 
 				@include media($medium-screen) {
-					padding: 7.5rem 5% 7.5%;
 					font-size: 3rem; 
 				}
 
 				@include media($large-screen) {
-					font-size: 3.5rem; 
+					font-size: 4rem;
 				}
 			}
 		}

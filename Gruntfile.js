@@ -230,7 +230,7 @@ module.exports = function (grunt) {
         // Performs rewrites based on rev and the useminPrepare configuration
         usemin: {
             options: {
-                assetsDirs: ["<%= config.dist %>", "<%= config.dist %>/images"]
+               assetsDirs: ["<%= config.dist %>", "<%= config.dist %>/images", "<%= config.dist %>/scripts"]
             },
             html: ["<%= config.dist %>/{,*/}*.html"],
             css: ["<%= config.dist %>/styles/{,*/}*.css"]
@@ -378,7 +378,6 @@ module.exports = function (grunt) {
                 "autoprefixer"
             ]);
         }
-
         grunt.task.run([
             "connect:test",
             "mocha"
@@ -392,7 +391,7 @@ module.exports = function (grunt) {
         "autoprefixer",
         "concat",
         "cssmin",
-        //"uglify",
+        "uglify",
         "copy:dist",
         "rev",
         "usemin",

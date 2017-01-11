@@ -617,28 +617,28 @@
 
 /* Red */
 .ui.red.table {
-  border-top: 0.2em solid #DB2828;
+  border-top: 0.2em solid #851900;
 }
 .ui.inverted.red.table {
-  background-color: #DB2828 !important;
+  background-color: #851900 !important;
   color: #FFFFFF !important;
 }
 
 /* Orange */
 .ui.orange.table {
-  border-top: 0.2em solid #F2711C;
+  border-top: 0.2em solid #B05D00;
 }
 .ui.inverted.orange.table {
-  background-color: #F2711C !important;
+  background-color: #B05D00 !important;
   color: #FFFFFF !important;
 }
 
 /* Yellow */
 .ui.yellow.table {
-  border-top: 0.2em solid #FBBD08;
+  border-top: 0.2em solid #FFB700;
 }
 .ui.inverted.yellow.table {
-  background-color: #FBBD08 !important;
+  background-color: #FFB700 !important;
   color: #FFFFFF !important;
 }
 
@@ -653,37 +653,37 @@
 
 /* Green */
 .ui.green.table {
-  border-top: 0.2em solid #21BA45;
+  border-top: 0.2em solid #005F26;
 }
 .ui.inverted.green.table {
-  background-color: #21BA45 !important;
+  background-color: #005F26 !important;
   color: #FFFFFF !important;
 }
 
 /* Teal */
 .ui.teal.table {
-  border-top: 0.2em solid #00B5AD;
+  border-top: 0.2em solid #3a625b;
 }
 .ui.inverted.teal.table {
-  background-color: #00B5AD !important;
+  background-color: #3a625b !important;
   color: #FFFFFF !important;
 }
 
 /* Blue */
 .ui.blue.table {
-  border-top: 0.2em solid #2185D0;
+  border-top: 0.2em solid #004d6f;
 }
 .ui.inverted.blue.table {
-  background-color: #2185D0 !important;
+  background-color: #004d6f !important;
   color: #FFFFFF !important;
 }
 
 /* Violet */
 .ui.violet.table {
-  border-top: 0.2em solid #6435C9;
+  border-top: 0.2em solid #001179;
 }
 .ui.inverted.violet.table {
-  background-color: #6435C9 !important;
+  background-color: #001179 !important;
   color: #FFFFFF !important;
 }
 

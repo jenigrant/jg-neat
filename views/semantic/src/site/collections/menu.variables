@@ -1,3 +1,16 @@
 /*******************************
     User Variable Overrides
 *******************************/
+
+@verticalMargin: @small;
+@horizontalMargin: 0em;
+@margin: @verticalMargin @horizontalMargin;
+
+/* Inverted */
+@invertedBackground: @primaryColor;
+@invertedBoxShadow: none;
+@invertedBorder: 0px solid transparent;
+@invertedHeaderBackground: transparent;
+
+@invertedItemBackground: transparent;
+@invertedItemTextColor: @white;

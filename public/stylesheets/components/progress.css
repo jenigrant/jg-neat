@@ -179,7 +179,7 @@
 ---------------*/
 
 .ui.progress.success .bar {
-  background-color: #21BA45 !important;
+  background-color: #005F26 !important;
 }
 .ui.progress.success .bar,
 .ui.progress.success .bar::after {
@@ -211,7 +211,7 @@
 ---------------*/
 
 .ui.progress.error .bar {
-  background-color: #DB2828 !important;
+  background-color: #851900 !important;
 }
 .ui.progress.error .bar,
 .ui.progress.error .bar::after {
@@ -301,13 +301,13 @@
   color: #FFFFFF;
 }
 .ui.inverted.progress.success > .label {
-  color: #21BA45;
+  color: #005F26;
 }
 .ui.inverted.progress.warning > .label {
   color: #F2C037;
 }
 .ui.inverted.progress.error > .label {
-  color: #DB2828;
+  color: #851900;
 }
 
 /*--------------
@@ -366,7 +366,7 @@
 
 /* Red */
 .ui.red.progress .bar {
-  background-color: #DB2828;
+  background-color: #851900;
 }
 .ui.red.inverted.progress .bar {
   background-color: #FF695E;
@@ -374,7 +374,7 @@
 
 /* Orange */
 .ui.orange.progress .bar {
-  background-color: #F2711C;
+  background-color: #B05D00;
 }
 .ui.orange.inverted.progress .bar {
   background-color: #FF851B;
@@ -382,7 +382,7 @@
 
 /* Yellow */
 .ui.yellow.progress .bar {
-  background-color: #FBBD08;
+  background-color: #FFB700;
 }
 .ui.yellow.inverted.progress .bar {
   background-color: #FFE21F;
@@ -398,7 +398,7 @@
 
 /* Green */
 .ui.green.progress .bar {
-  background-color: #21BA45;
+  background-color: #005F26;
 }
 .ui.green.inverted.progress .bar {
   background-color: #2ECC40;
@@ -406,7 +406,7 @@
 
 /* Teal */
 .ui.teal.progress .bar {
-  background-color: #00B5AD;
+  background-color: #3a625b;
 }
 .ui.teal.inverted.progress .bar {
   background-color: #6DFFFF;
@@ -414,7 +414,7 @@
 
 /* Blue */
 .ui.blue.progress .bar {
-  background-color: #2185D0;
+  background-color: #004d6f;
 }
 .ui.blue.inverted.progress .bar {
   background-color: #54C8FF;
@@ -422,7 +422,7 @@
 
 /* Violet */
 .ui.violet.progress .bar {
-  background-color: #6435C9;
+  background-color: #001179;
 }
 .ui.violet.inverted.progress .bar {
   background-color: #A291FB;

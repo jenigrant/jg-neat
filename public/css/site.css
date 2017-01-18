@@ -1,0 +1,85 @@
+		.main.menu {
+			margin: 0;
+			border-top: 2rem rgba(255, 255, 255, 1) solid !important;
+			box-shadow: 0px 3px 5px rgba(00, 77, 111, .5) !important;
+		}
+
+		.main.menu h1:before {
+			background-image: url('/images/logoform.png') !important;
+			background-repeat: no-repeat !important;
+			background-size: 100% 100% !important;
+			background-position: 0 !important;
+			background-color: transparent !important;
+			min-width: 8rem;
+			min-height: 8rem;
+			overflow: visible;
+			position: absolute;
+			left: 0;
+			top: -1rem !important;
+			z-index: 10000;
+		}
+
+		.main.menu h1 {
+			font-size: 4rem;
+			padding: 1rem 0 .5rem 9rem !important;
+			font-weight: 400 !important;
+		}
+
+		.masthead {
+			min-height: 27.5rem;
+			margin-bottom: 2rem !important;
+		}
+
+		.masthead.segment {
+			background: linear-gradient( rgba(0, 77, 111, .75), rgba(0, 0, 0, .9) ), url("/images/quote-tools.jpg");
+			background-attachment: fixed;
+			background-position: left 0;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 0 !important;
+		}
+
+		.masthead .header {
+			padding-top: 6.5rem;
+			font-size: 3rem !important;
+			font-weight: normal;
+		}
+
+		#summary {
+			margin-bottom: 2rem !important;
+		}
+
+		#summary .header {
+			font-weight: 600;
+			font-size: 1.65rem;
+		}
+
+		#process {
+			background: linear-gradient( rgba(255, 255, 255, .75), rgba(255, 255, 255, 1) ), url("/images/quote-keyboard.jpg");
+			background-attachment: fixed;
+			background-position: left 0;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		#process .header {
+			font-size: 3rem;
+			font-weight: 600 !important;
+		}
+
+		#experience {
+			margin: 2rem auto !important;
+		}
+
+		#experience .header {
+			font-size: 2.5rem;
+			font-weight: 600 !important;
+		}
+		
+		#experience h4 {
+			font-size: 1.75rem !important;
+		}
+
+		footer {
+
+		}

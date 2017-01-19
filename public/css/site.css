@@ -100,11 +100,12 @@
 		#experience .header {
 			font-size: 2.5rem;
 			font-weight: 600 !important;
+			margin-bottom: 2rem;
 		}
 		
-		#experience .card .header {
-			font-size: 1.25rem !important;
-			margin: 0 !important;
+		#experience .card .bottom {
+			font-size: 1.25rem;
+			color: black !important;
 		}
 
 		.modal {

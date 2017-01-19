@@ -13,11 +13,11 @@
 
 <body>
 	<header class="ui sticky blue inverted horizontal stackable boxshadow main menu">
-		<nav class="ui center aligned container">
+		<nav class="ui container">
 			<h1 class="header item">Jeni Grant</h1>
-			<a class="item right floated" href="#process">About Me</a>
-			<a class="item" href="#experience">Experience</a>
-			<a class="item" href="#contact">Contact</a>
+				<a class="right floated item" href="#process">About Me</a>
+				<a class="item" href="#experience">Experience</a>
+				<a class="item" href="#contact">Contact</a>
 		</nav>
 	</header>
 
@@ -30,21 +30,21 @@
 			</section>
 
 			<section id="summary" class="ui container">
-				<div class="ui center aligned three columns divided stackable grid">
-					<div class="ui column">
-						<i class="large red users icon inverted circular"></i>
+				<div class="ui center aligned divided three column stackable grid container">
+					<div class="ui column container">
+						<i class="large red inverted circular users icon"></i>
 						<h3 class="header">Exceptional User Centered Design</h3>
-						<p class="ui justified container">From initial concept to production deployment, I build innovative interfaces that delight users with their ease of use. Project requirements are identified from user research and communication with key stakeholders, then distilled into a plan, using card sorting, whiteboarding, user stories, and other tools to model engaging interfaces. After modeling, it’s on to cohesive design and development strategies to ensure that every feature is first-class.</p>
-					</div>
-					<div class="ui column">
+						<p class="ui left aligned container">From initial concept to production deployment, I build innovative interfaces that delight users with their ease of use. Project requirements are identified from user research and communication with key stakeholders, then distilled into a plan, using card sorting, whiteboarding, user stories, and other tools to model engaging interfaces. After modeling, it’s on to cohesive design and development strategies to ensure that every feature is first-class.</p>
+					</div> 
+					<div class="ui column container">
 						<i class="large yellow computer icon inverted circular"></i>
 						<h3 class="header">Talented Front-End Development</h3>
-						<p class="ui justified container">I create well-documented, production-level code that merge an in-depth understanding of some of the web’s most essential technologies with the latest in development techniques. Using responsive design, progressive enhancement, and the latest in HTML5, CSS3, and Javsacript, I develop robust front-end interfaces that degrade cleanly and seamlessly comply with accessibility initiatives like Section 508 and WAI-ARIA.</p>
+						<p class="ui left aligned container">I create well-documented, production-level code that merge an in-depth understanding of some of the web’s most essential technologies with the latest in development techniques. Using responsive design, progressive enhancement, and the latest in HTML5, CSS3, and Javsacript, I develop robust front-end interfaces that degrade cleanly and seamlessly comply with accessibility initiatives like Section 508 and WAI-ARIA.</p>
 					</div>
-					<div class="ui column">
+					<div class="ui column container">
 						<i class="large green heart icon inverted circular"></i>
 						<h3 class="header">Passion for Strategy &amp; Interaction</h3>
-						<p class="ui justified container">Design and development aren’t just day jobs to me; user experience is my passion.  I love knowing that what I do helps people achieve their everyday goals. I have a voracious hunger for knowledge, and constantly seek out future trends in technology. My passion has led me to consistently use innovative thinking to problem solve, storytell, and create dynamic, user-friendly interfaces using a wide variety of tools and techniques on every major computing platform.</p>
+						<p class="ui left aligned container">Design and development aren’t just day jobs to me; user experience is my passion.  I love knowing that what I do helps people achieve their everyday goals. I have a voracious hunger for knowledge, and constantly seek out future trends in technology. My passion has led me to consistently use innovative thinking to problem solve, storytell, and create dynamic, user-friendly interfaces using a wide variety of tools and techniques on every major computing platform.</p>
 					</div>
 				</div>
 			</section>
@@ -52,11 +52,9 @@
 			<section id="process" class="ui basic segment">
 				<div class="ui two column grid content container">
 					<blockquote class="ui column container">
-						<div class="ui huge red fluid right middle aligned header container">
-							<i class="ui left floated quote left icon"></i>
-							Pleasing things work better, are easier to learn, and produce a more harmonious result.
-							<i class="ui quote right icon right floated"></i> 
-							<cite> &mdash; Donald A. Norman, Ph.D.</cite>
+						<div class="ui huge red right middle aligned header container">
+							<p><span class="quote left">&ldquo;</span>Pleasing things work better, are easier to learn, and produce a more harmonious result.&nbsp;<span class="quote right">&rdquo;</span></p>
+							<p><cite>&mdash; Donald A. Norman, Ph.D.</cite></p>
 						</div>
 					</blockquote>
 
@@ -69,16 +67,16 @@
 			</section>
 
 			<section id="experience" class="ui basic segment container">
-				<h3 class="ui huge center aligned header">Experienced Design &amp; Development Professional</h3>
+				<h3 class="ui huge center aligned header">Experienced Front-End Development &amp; Design</h3>
 				<div class="ui three columns grid stackable cards">
 				<!-- Flowserve card & modal -->
-					<div class="ui raised card" onclick = "$('#flowserve.ui.modal').modal('show')">
-						<div class="ui top attached center aligned borderless blue inverted segment">
-							<h4 class="ui medium inverted header">Flowserve</h4>
+					<div class="ui raised card" onclick="$('#flowserve.ui.modal').modal('show')">
+						<div class="ui top attached center aligned blue inverted segment">
+							<h4 class="ui inverted header">Flowserve</h4>
 						</div>
-						<image class="ui fluid rounded image" src="" height="200" style="height: 200px !important">
+						<image class="ui fluid rounded image" src="/images/flowserve-teaser.png">
 						<div class="center aligned content">
-							<p class="ui justified container">Built an online survey that could handle bidirectional language support using asynchronous scripting techiques — three years before AJAX.</p>
+							<p class="ui left aligned container">Built an online survey that could handle bidirectional language support using asynchronous techiques&mdash;three years before AJAX.</p>
 						</div>
 						<button class="ui yellow bottom attached button">Creative Strategy Innovations</button>
 					</div>
@@ -86,12 +84,13 @@
 					<!-- modal -->
 					<div id="flowserve" class="ui modal">
 						<i class="close icon"></i>
-						<div class="ui image content">
-							<img class="ui fluid middle aligned image" src="/images/flowserve.png">
-						
-							<div class="ui middle aligned description">
+						<div class="ui two column grid container">
+							<div class="ui middle aligned column content">
+								<img class="ui image" src="/images/flowserve.png">
+							</div>
+							<div class="ui middle aligned column content">
 								<h3>Flowserve Customer Survey</h3>
-								<h4>Built an online survey that could handle bidirectional language support using asynchronous scripting techiques — three years before AJAX.</h4>
+								<h4>Built an online survey that could handle bidirectional language support using asynchronous techiques — three years before AJAX.</h4>
 								<p>The Flowserve Customer Satisfaction Survey required bidirectional input for an international audience without specific language support. The resulting application could handle input in both rtl and ltr languages, and the language independent template displayed content properly regardless of directionality. Each set of questions and responses was stored in XML and accessed using asynchronous scripting, and translated into browser-ready HTML with XSLTs. The survey was sent to customers in over 20 different countries, and received the highest response rate of any existing Flowserve customer surveys.</p>
 							</div>
 						</div>
@@ -100,11 +99,11 @@
 				<!-- Lowes card and modal -->
 					<div class="ui raised card stack" onclick = "$('#lowes.ui.modal').modal('show')">
 						<div class="ui top attached center aligned blue inverted segment">
-							<h4 class="ui medium inverted header">Lowe's Home Improvement</h4>
+							<h4 class="ui medium inverted header">Lowe's</h4>
 						</div>
-						<image class="ui attached fluid rounded image" src="" height="200" style="height: 200px !important">
+						<image class="ui attached fluid rounded image" src="/images/lowes-teaser.png">
 						<div class="center aligned content">
-							<p class="ui justified container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas vestibulum dui nec eleifend. Quisque mattis suscipit pretium.</p>
+							<p class="ui left aligned container">Integrated custom Adobe Analytics event tracking into three different front-end platforms for a Fortune 50 retailer site.</p>
 						</div>
 							<button class="ui yellow bottom attached button"><span class="ui inverted text">Proven Production Standards</span></button>
 					</div>
@@ -112,11 +111,12 @@
 					<!-- modal -->
 					<div id="lowes" class="ui modal">
 						<i class="close icon"></i>
-						<div class="ui image content">
-							<img class="ui fluid middle aligned image" src="/images/soccer.png">
-						
-							<div class="ui middle aligned description">
-								<h3>Lowe's Home Improvement Redesign</h3>
+						<div class="ui two column grid container">
+							<div class="ui middle aligned column content">
+								<img class="ui image" src="/images/lowes.png">
+							</div>
+							<div class="ui middle aligned column content">
+								<h3>Integrated custom event tracking into three different front-end platforms for a Fortune 50 retailer site.</h3>
 								<h4>Built an online survey that could handle bidirectional language support using asynchronous scripting techiques — three years before AJAX.</h4>
 								<p>The Flowserve Customer Satisfaction Survey required bidirectional input for an international audience without specific language support. The resulting application could handle input in both rtl and ltr languages, and the language independent template displayed content properly regardless of directionality. Each set of questions and responses was stored in XML and accessed using asynchronous scripting, and translated into browser-ready HTML with XSLTs. The survey was sent to customers in over 20 different countries, and received the highest response rate of any existing Flowserve customer surveys.</p>
 							</div>
@@ -128,9 +128,9 @@
 						<div class="ui top attached center aligned blue inverted segment">
 							<h4 class="ui medium inverted header">iContact</h4>
 						</div>
-						<image class="ui attached fluid rounded image" src="" height="200" style="height: 200px !important">
+						<image class="ui attached fluid rounded image" src="/images/icontact-teaser.png">
 						<div class="center aligned content">
-							<p class="ui justified container">One of two designers who created a user experience that pivoted a startup into a multi-million dollar company.</p>
+							<p class="ui left aligned container">Researched, protoyped and built a user experience which pivoted a struggling startup into a multi-million dollar company.</p>
 						</div>
 							<button class="ui yellow bottom attached button">Exponential Growth Record</button>
 					</div>
@@ -138,12 +138,13 @@
 					<!-- modal -->
 					<div id="icontact" class="ui modal">
 						<i class="close icon"></i>
-						<div class="ui image content">
-							<img class="ui fluid middle aligned image" src="/images/icontact.png">
-						
-							<div class="ui middle aligned description">
+						<div class="ui two column grid container">
+							<div class="ui middle aligned column content">
+								<img class="ui image" src="/images/icontact.png">
+							</div>
+							<div class="ui middle aligned column content">
 								<h3>iContact Product Pivot</h3>
-								<h4>One of two designers who created a user experience that pivoted a startup into a multi-million dollar company.</h4> 
+								<h4>Pivoted a startup into a multi-million dollar company.</h4> 
 								<p>Shortly after its first million in sales, iContact decided to transition their product to a more mature UX designed around their customer's needs. After generating competitive analyses of key competitors and target competitive markets, I performed content auditing on existing marketing materials. To facilitate company buy-in of user-centered principles, I worked with back-end development in an Agile environment to create functional design patterns, define user flows, establish sitemaps, and other UX deliverables. Before launch, I conducted focus groups, informal “hallway” usability audits, formal usability testing, and A/B testing in order to verify and validate application features. Trial conversion rates increased by 200% during the first quarter after relaunch and doubled the number of paying customers in a less than year. iContact was named the #1 Marketing Application for 2007 by SEOMoz, then a major industry consulting firm.</p>
 							</div>
 						</div>
@@ -157,14 +158,14 @@
 		<div class="ui two column grid content container">
 			<section id="contact" class="ui basic column middle aligned container">
 				<div class="ui blue inverted huge compact menu">
-					<a class="item"><i class="linkedin icon"></i>Jeni Grant</a>
-					<a class="item"><i class="write icon"></i>hello@jenigrant.com</a>
-					<a class="item"><i class="phone icon"></i>(919) 355-6543</a>
+					<a class="item" href="//www.linkedin.com/in/jenigrant"><i class="linkedin icon"></i>Jeni Grant</a>
+					<a class="item" href="mailto:hello@jenigrant.com"><i class="write icon"></i>hello@jenigrant.com</a>
+					<a class="item" href="tel:019193556543"><i class="phone icon"></i>(919) 355-6543</a>
 				</div>
 			</section>
 			<div class="ui column right aligned container">
 				<p>Copyright Jeni Grant, 2014-2017.<br>
-				Please feed the designer. She's swell.</p>
+				Please feed the coder. She's swell.</p>
 			</div>
 		</div>
 	</footer>

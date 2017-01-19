@@ -7,7 +7,7 @@
 		.main.menu h1:before {
 			background-image: url('/images/logoform.png') !important;
 			background-repeat: no-repeat !important;
-			background-size: 100% 100% !important;
+			background-size: contain !important; 
 			background-position: 0 !important;
 			background-color: transparent !important;
 			min-width: 8rem;
@@ -67,6 +67,32 @@
 			font-weight: 600 !important;
 		}
 
+		#process .header p {
+				margin: 0 !important;
+		}
+
+		#process .quote {
+			font-size: 6rem;
+			font-family: serif;
+			position:	relative;
+			color: rgb(133, 25, 0);
+		}
+
+		#process .quote.left {
+			top: 2rem;
+			right: .75rem;
+		}
+
+		#process .quote.right {
+			top: .75rem;
+			float: right;
+			clear: right !important;
+		}
+
+		#process cite {
+			font-size: 2rem;
+		}
+
 		#experience {
 			margin: 2rem auto !important;
 		}
@@ -76,8 +102,13 @@
 			font-weight: 600 !important;
 		}
 		
-		#experience h4 {
-			font-size: 1.75rem !important;
+		#experience .card .header {
+			font-size: 1.25rem !important;
+			margin: 0 !important;
+		}
+
+		.modal {
+			padding: 1.75rem;
 		}
 
 		footer {

@@ -1,12 +1,12 @@
 jenigrant.com
 =============
 
-= Option one: = 
+Option one: 
 	docker build .
 	
 	(currently only works for localhost)
 
-= Option two: =
+Option two:
 
 Make sure nodejs is installed.
 

@@ -9,20 +9,14 @@ After pulling repo:
 	docker run -d -p 80:3000 --name jenigrant.com jenigrant/jenigrant.com
 
 ## Option two:
+	npm install
+	gulp build
+	npm start
 
-Make sure nodejs is installed.
-
-To build:
-* npm install
-* gulp build
-
-To run:
-* npm start
-* Navigate to http://localhost:3000
+Navigate to http://localhost
 
 -OR-
 
-* Point an apache virtual host to ./public/
-* Navigate to your chosen hostname
+Create a proxy to port 3000 w/ Apache or nginx
 
 Voila

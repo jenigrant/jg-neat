@@ -7,13 +7,11 @@ After pulling repo:
 	docker run -d -p 80:3000 --name jenigrant.com jenigrant/jenigrant.com
 
 ## Option two:
+Make sure node is running
+
 	npm install
 	cd ./semantic
 	gulp build
 	npm start
 
-<<<<<<< HEAD
-Navigate to http://localhost
-=======
-Navigate to http://localhost
->>>>>>> 3daf957624c610dcb8caf91d170131266647a630
+http://localhost

@@ -10,13 +10,8 @@ After pulling repo:
 
 ## Option two:
 	npm install
+	cd ./semantic
 	gulp build
 	npm start
 
 Navigate to http://localhost
-
--OR-
-
-Create a proxy to port 3000 w/ Apache or nginx
-
-Voila

@@ -6,6 +6,8 @@ After pulling repo:
 	docker build -t jenigrant/jenigrant.com .
 	docker run -d -p 80:3000 --name jenigrant.com jenigrant/jenigrant.com
 
+	Proceed to http://localhost
+
 ## Option two:
 Make sure node is running
 
@@ -14,4 +16,4 @@ Make sure node is running
 	gulp build
 	npm start
 
-http://localhost
+	Proceed to http://localhost:3000

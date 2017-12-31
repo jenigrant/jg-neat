@@ -169,7 +169,7 @@
 .ui.card > .content > .header {
   display: block;
   margin: '';
-  font-family: 'Myriad Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   color: rgba(0, 0, 0, 0.85);
 }
 
@@ -787,7 +787,7 @@ a.ui.card:hover,
 
 
 /* Mobile Only */
-@media only screen and (max-width: 899px) {
+@media only screen and (max-width: 767px) {
   .ui.two.doubling.cards {
     margin-left: 0em;
     margin-right: 0em;
@@ -872,7 +872,7 @@ a.ui.card:hover,
 }
 
 /* Tablet Only */
-@media only screen and (min-width: 900px) and (max-width: 1099px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .ui.two.doubling.cards {
     margin-left: 0em;
     margin-right: 0em;
@@ -960,7 +960,7 @@ a.ui.card:hover,
       Stackable
 --------------------*/
 
-@media only screen and (max-width: 899px) {
+@media only screen and (max-width: 767px) {
   .ui.stackable.cards {
     display: block !important;
   }

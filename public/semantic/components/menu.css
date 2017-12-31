@@ -23,7 +23,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0.92857143rem 0em;
+  margin: 1rem 0em;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   background: #FFFFFF;
   font-weight: normal;
@@ -383,14 +383,14 @@
     Container
 ---------------*/
 
-@media only screen and (max-width: 899px) {
+@media only screen and (max-width: 767px) {
   .ui.menu > .ui.container {
     width: 100% !important;
     margin-left: 0em !important;
     margin-right: 0em !important;
   }
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 768px) {
   .ui.menu:not(.secondary):not(.text):not(.tabular):not(.borderless) > .container > .item:not(.right):not(.borderless):first-child {
     border-left: 1px solid rgba(34, 36, 38, 0.1);
   }
@@ -1263,7 +1263,7 @@ Floated Menu / Item
     Stackable
 ---------------*/
 
-@media only screen and (max-width: 899px) {
+@media only screen and (max-width: 767px) {
   .ui.stackable.menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1374,7 +1374,7 @@ Floated Menu / Item
 
 .ui.inverted.menu {
   border: 0px solid transparent;
-  background: #3a625b;
+  background: #1B1C1D;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -1383,7 +1383,7 @@ Floated Menu / Item
 .ui.inverted.menu .item,
 .ui.inverted.menu .item > a:not(.ui) {
   background: transparent;
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.9);
 }
 .ui.inverted.menu .item.menu {
   background: transparent;
@@ -1918,7 +1918,7 @@ Floated Menu / Item
   bottom: 0px;
   margin-bottom: 0em;
   top: 0px;
-  margin-top: 0.92857143rem;
+  margin-top: 1rem;
   border-radius: 0.28571429rem 0.28571429rem 0em 0em;
 }
 .ui.menu[class*="top attached"]:first-child {
@@ -1930,7 +1930,7 @@ Floated Menu / Item
   bottom: 0px;
   margin-top: 0em;
   top: 0px;
-  margin-bottom: 0.92857143rem;
+  margin-bottom: 1rem;
   -webkit-box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15), none;
           box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15), none;
   border-radius: 0em 0em 0.28571429rem 0.28571429rem;

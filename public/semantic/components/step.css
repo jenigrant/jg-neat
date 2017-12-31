@@ -135,7 +135,7 @@
 
 /* Title */
 .ui.steps .step .title {
-  font-family: 'Myriad Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 1.14285714em;
   font-weight: bold;
 }
@@ -283,7 +283,7 @@
 
 
 /* Mobile (Default) */
-@media only screen and (max-width: 899px) {
+@media only screen and (max-width: 767px) {
   .ui.steps:not(.unstackable) {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -425,7 +425,7 @@
 
 
 /* Tablet Or Below */
-@media only screen and (max-width: 1099px) {
+@media only screen and (max-width: 991px) {
   .ui[class*="tablet stackable"].steps {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;

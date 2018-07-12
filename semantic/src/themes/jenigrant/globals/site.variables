@@ -5,7 +5,7 @@
 @fontName          : 'Myriad Pro';
 @fontSmoothing     : antialiased;
 
-@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@headerFont        : @fontName,'Helvetica Neue', Arial, Helvetica, sans-serif;
 @pageFont          : 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 
 @googleFontName    : 'Lato';
@@ -35,7 +35,7 @@
 
 /*-- Breakpoints --*/
 
-@mobileBreakpoint            : 767px;
+@mobileBreakpoint            : 800px;
 @tabletBreakpoint            : 900px;
 @computerBreakpoint          : 1100px;
-@largeMonitorBreakpoint      : 1300px;
+@largeMonitorBreakpoint      : 1350px;

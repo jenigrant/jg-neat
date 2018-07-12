@@ -20,13 +20,13 @@
 			overflow: visible;
 			position: absolute;
 			left: 0;
-			top: -1rem !important;
+			top: -1.33rem !important;
 			z-index: 10000;
 		}
 
 		.main.menu h1 {
 			font-size: 4rem;
-			padding: 1rem 0 .5rem 9rem !important;
+			padding: .5rem 0 .5rem 9rem !important;
 			font-weight: 400 !important;
 		}
 
@@ -60,7 +60,7 @@
 
 		#summary .header {
 			font-weight: 600;
-			font-size: 1.65rem;
+			font-size: 1.5rem;
 		}
 
 		#process {

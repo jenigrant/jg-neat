@@ -19,5 +19,5 @@ RUN npm clean-install
 RUN rm -rf node_packages
 RUN npm install
 
-EXPOSE 443 
+EXPOSE 3000
 CMD [ "npm", "start" ]

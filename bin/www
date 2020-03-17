@@ -12,7 +12,7 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || '80');
 app.set('port', port);
 
 /**
@@ -31,15 +31,7 @@ server.on('listening', onListening);
 
 /**
  * Normalize a port into a number, string, or false.
-
- var express = require('express');
-var http = require('http');
-var app = express();
-
-app.use(express.static(__dirname + '/public'));
-
-http.createServer(app).listen(3000);
- */
+*/
 
 function normalizePort(val) {
   var port = parseInt(val, 10);

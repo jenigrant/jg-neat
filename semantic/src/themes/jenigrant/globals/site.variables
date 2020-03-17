@@ -31,11 +31,3 @@
 
 @lightPrimaryColor   : @lightPink;
 @lightSecondaryColor : @lightGrey;
-
-
-/*-- Breakpoints --*/
-
-@mobileBreakpoint            : 800px;
-@tabletBreakpoint            : 900px;
-@computerBreakpoint          : 1100px;
-@largeMonitorBreakpoint      : 1350px;

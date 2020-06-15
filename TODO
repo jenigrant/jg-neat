@@ -1,0 +1,27 @@
+/** Necessary & Complex **/
+Move Font Awesome to local copy and remove JS
+
+/** Ongoing for refactor **/
+Add list to header navigation
+Style header navigation
+Border inbetween summary grid?
+Add subtle background to strong tag
+Adjust blockquote citation
+Add image descriptions to cards
+Adjust border & shadow
+Adjust modal link
+Add onClick action for modal
+Add images to modals
+Style modals
+Make footer list inline
+Align right grid to right
+
+/** Clean it Up **/
+Comment CSS
+Alphabetize CSS attributes
+Move Google Lato to local copy
+
+/** Testing **/
+Check web server is ready
+Check on phones
+Check on Opera screen reader

@@ -1,10 +1,11 @@
 /** Necessary & Complex **/
 Move Font Awesome to local copy and remove JS
+Redesign summary grid to be less text, mobile first
 
 /** Ongoing for refactor **/
 Add list to header navigation
 Style header navigation
-Border inbetween summary grid?
+Remove medium-sized grid
 Add subtle background to strong tag
 Adjust blockquote citation
 Add image descriptions to cards

@@ -12,7 +12,7 @@
     "express": "^4.17.1",
     "gulp-cli": "^2.2.0",
     "morgan": "^1.9.1",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "semantic-ui": "^2.4",
     "serve-favicon": "^2.5.0"
   },

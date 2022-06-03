@@ -50,10 +50,6 @@ h1::before {
 	width: 7.5rem;
 }
 
-nav {
-	align-content: right;
-	grid-column-start: 6;
-}
 
 strong {
 	background-color: rgba(0, 77, 111, .1);
@@ -251,8 +247,9 @@ footer {
 /* Media Queries */
 
 
-@media only screen and (max-width: 768px);
+@media (min-width: 768px) {
 
-/*	display: grid;
-	grid-gap: 2rem;
-	grid-template-columns: repeat(auto-fit, minmax(600px, 3fr)); */
+	header { background-color: #F00 }
+
+}
+

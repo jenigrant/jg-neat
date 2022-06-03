@@ -6,77 +6,73 @@
 	--gray: rgba(0, 0, 0, .25);
 }
 
+/* Basic Layout */
 
 body {
 	align-items: center;
 	font-family: Lato, Arial, Helvetica, sans-serif;
-	font-size: 15px;
 	margin: 0;
 	padding: 0;
 }
 
+/* Header Element and Navigation */
+
 header {
-	align-items: center;
 	background-color: var(--blue);
 	color: white;
-	display: grid;
-	grid-template-rows: 1;
-	grid-template-columns: 6;
-	margin-top: 2rem;
-	overflow: visible;
+	height: 4rem;
+	margin-top: 1rem;
+	text-align: center;
 }
 
-h1 {
-	font-weight: 400;
-	font-size: 42pt;
-	grid-column-start: 1;
-	margin: 0 0 0 10rem;
-	padding: .1rem;
 
-}
-
-h1::before {
+header::before {
 	/* FAQ: why was this not represented in the HTML?
 	A: because a logoform is semantically useless and not needed in a non-visual experience
 	therefore insertion by CSS allows it to be ignored entirely by screen readers */
 	background-image: url('../images/logoform.png');
-	background-size: 7.5rem;
+	background-repeat: no-repeat;
+	background-size: 6rem;
 	content: " ";
 	display: inline-block;
-	height: 7.5rem;
-	left: 1rem;
-	position: absolute;
-	top: 1rem;
-	width: 7.5rem;
+	height: 6rem;
+	position: relative;
+	top: -1rem;
+	vertical-align: middle;
+	width: 6rem;
+
 }
 
-
-strong {
-	background-color: rgba(0, 77, 111, .1);
+header h1 {
+	font-weight: 400;
+	font-size: 3.5rem;
+	display: inline;
+	padding: 0 1rem;
 }
+
+/* Hero Element */
 
 #hero {
-	align-items: center;
-    background: linear-gradient( rgba(0, 77, 111, .75), rgba(0, 0, 0, .9) ), url('../images/quote-tools.jpg');
     background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 77, 111, .8), rgba(0, 0, 0, .9) ), url('../images/quote-tools.jpg');
     background-position: left 0;
     background-repeat: no-repeat;
     background-size: cover;
 	color: white;
-	display: grid;
-	min-height: 23rem;
-	max-height: 30%;
+	margin: auto;
 	padding: 1rem;
-
 }
 
 #hero h2 {
-	font-size: 36pt;
+	display: block;
+	font-size: 2.5rem;
 	font-weight: 400;
-	margin: auto 5rem;
+	margin: 6rem auto;
 	text-align: center;
-	width: 1fr;
+	vertical-align: middle;
 }
+
+/* Personal Summary Element */
 
 #summary {
 	align-self: center;
@@ -89,7 +85,7 @@ strong {
     border-radius: 50%;
     color: white;
     font-size: 1.5rem;
-    float:  left;
+    float: left;
 
 }
 
@@ -104,34 +100,11 @@ strong {
 	line-height: 1.5;
 }
 
-#uxengineer, #ftenddev, #passion {
 
-}
-
-#uxengineer i {
-	background-color: var(--red);
-	color: white;
-}
-
-#ftenddev i {
-	background-color: var(--yellow);
-	color: white;
-}
-
-#passion i {
-	background-color: var(--green);
-	color: white;
-}
+/* Process Element */
 
 #process {
-	background: linear-gradient( rgba(255, 255, 255, .5), rgba(255, 255, 255, 1) ), url(../images/quote-keyboard.jpg);
-    background-attachment: fixed;
-    background-position: left 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-	display: grid;
-	grid-column-end: -1;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
 	line-height: 1.5;
 }
 
@@ -145,14 +118,11 @@ strong {
 	font-size: 29pt;
 	font-weight: 700;
 	text-align: justify;
-/*	text-align: leftt;
-	float: both*/;
 }
 
 #process blockquote p::before {
 	content: "\201c";
 	font-family: serif !important;
-	font-size: 54pt;
 	line-height: .5;
 	position: relative;
 	right: 1rem;
@@ -162,7 +132,6 @@ strong {
 #process blockquote p::after {
 	content: "\201d";
 	font-family: serif !important;
-	font-size: 54pt;
 	line-height: .5;
 	position: relative;
 	left: .3rem;
@@ -176,33 +145,36 @@ strong {
 #process footer {
 	background-color: rgba(255,255,255,0);
 	color: var(--red);
-	font-size: 18pt;
 	display: block;
 	text-align: right;
 }
+
+
+/* Experience Element */
 
 #experience {
 	align-content: center;
 	align-items: center;
 	align-self: center;
+	background-attachment: fixed;
+	background-image: linear-gradient( rgba(255, 255, 255, .5), rgba(255, 255, 255, 1) ), url(../images/quote-keyboard.jpg);
+    background-position: left 0;
+    background-repeat: no-repeat;
+    background-size: cover;
 	text-align: center;
+
 }
 
 #experience h3 {
-	font-size: 32pt;
 	padding: 0 2rem;
 }
 
-#experience .grid {
-	display: inline-grid;
-	grid-gap: 1.5rem;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
 
 #experience .card {
 	align-content: center;
 	align-items: center;
 	align-self: center;
+	background-color: white;
 	border: 1px solid var(--gray);
 	border-radius: 1rem;
 	box-shadow: 0rem 0rem 10px var(--gray);
@@ -213,15 +185,12 @@ strong {
 
 #experience img {
 	width: auto;
-	height: 13rem;
 }
 
 #experience .card a {
 	background-color: var(--yellow);
 	color: black;
 	display: block;
-	font-size: 14pt;
-	height: 4rem;
 	text-align: center;
 	text-decoration: none;
 }
@@ -230,6 +199,8 @@ strong {
 	display: none;
 }
 
+/* Footer Element */
+
 footer {
 	align-content: center;
 	align-items: center;
@@ -237,19 +208,6 @@ footer {
 	background-color: var(--blue);
 	color: white;
 	display: grid;
-	grid-gap: 1.5rem;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-template-rows: 1;
 	margin-top: 2rem;
 	overflow: visible;
 }
-
-/* Media Queries */
-
-
-@media (min-width: 768px) {
-
-	header { background-color: #F00 }
-
-}
-

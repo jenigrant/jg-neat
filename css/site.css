@@ -60,7 +60,7 @@ header h1 {
 	font-weight: 400;
 	font-size: 6.5vh;
 	margin: 0;
-	padding: 0 1vw;
+	padding: 0 2vw;
 }
 
 /* Hero Element */
@@ -97,12 +97,51 @@ header h1 {
 #summary h3 {
 	font-size: 3.5vh;
 	margin: 0 0 2vh;
-	text-align: left;
+	text-align: center;
+	border-top: 1px solid black;
+	position: relative;
+	top: -3vh;
+	padding-top: 3vh;
+	z-index: -99;
 }
 
 #summary p {
-	text-align: left;
+	text-align: justify;
 	line-height: 1.5rem;
+}
+
+#summary #uxengineer::before {
+	background-color: var(--red);
+	border-radius: 5vh;
+	border-color: var(--red);
+	content: ' ';
+	color: white;
+	display: inline-block;
+	height: 5vh;
+	width: 5vh;
+}
+
+#summary #ftenddev::before {
+	background-color: var(--yellow);
+	border-radius: 5vh;
+	border-color: var(--yellow);
+	content: ' ';
+	color: white;
+	display: inline-block;
+	height: 5vh;
+	width: 5vh;
+}
+
+#summary #passion::before {
+	background-color: var(--green);
+	border-radius: 5vh;
+	border-color: var(--green);
+	border: 10px solid white;
+	content: ' ';
+	color: white;
+	display: inline-block;
+	height: 5vh;
+	width: 5vh;
 }
 
 /* Experience Element */

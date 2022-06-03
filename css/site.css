@@ -21,9 +21,11 @@ header {
 	background-color: var(--blue);
 	color: white;
 	display: block;
-	height: 10vh;
+	height: 8vh;
 	margin-top: 2.5vh;
+	position: fixed;
 	text-align: center;
+	width: 100vw;
 }
 
 
@@ -36,12 +38,21 @@ header::before {
 	background-size: 10vh;
 	content: " ";
 	display: inline-block;
-	margin-top: 0;
 	height: 10vh;
 	padding: 0;
 	position: relative;
+	top: -1.5vh;
 	vertical-align: middle;
-	width: 10vh;
+	width: 10vw;
+
+
+	/* Drop shadow on image, source: Stack Exchange */
+
+	-webkit-filter: drop-shadow(0 1vh 1vw rgba(0,0,0,.5));
+	-moz-filter: drop-shadow(0 1vh 1vw rgba(0,0,0,.5));
+	-ms-filter: drop-shadow(0 1vh 1vw rgba(0,0,0,.5));
+	-o-filter: drop-shadow(0 1vh 1vw rgba(0,0,0,.5));
+	filter: drop-shadow(0 1vh 1vw rgba(0,0,0,.5));
 }
 
 header h1 {
@@ -49,16 +60,15 @@ header h1 {
 	font-weight: 400;
 	font-size: 6.5vh;
 	margin: 0;
-	padding: 0 1vh;
-	vertical-align: middle;
+	padding: 0 1vw;
 }
 
 /* Hero Element */
 
 #hero {
     background-attachment: fixed;
-    background-image: linear-gradient(rgba(0, 77, 111, .8), rgba(0, 0, 0, .9) ), url('../images/quote-tools.jpg');
-    background-position: left 0;
+    background-image: linear-gradient(rgba(0, 77, 111, .3), rgba(0, 0, 0, .9) ), url('../images/quote-keyboard.jpg');
+    background-position: left 7vh;
     background-repeat: no-repeat;
     background-size: cover;
 	color: white;
@@ -70,7 +80,7 @@ header h1 {
 	display: block;
 	font-size: 5vh;
 	font-weight: 400;
-	margin: 10vh auto;
+	margin: 25vh auto 20vh auto;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -80,34 +90,70 @@ header h1 {
 #summary {
 	align-self: center;
 	align-content: center;
-	margin: 0 7.5vh;
+	margin: 2.5vh 7.5vh;
 	text-align: center;
-}
-
-#summary i {
-    border-radius: 50%;
-    color: white;
-    font-size: 1.5rem;
-    float: left;
-
 }
 
 #summary h3 {
-	font-size: 5ch;
-	margin: 0 0 1rem;
-	text-align: center;
+	font-size: 3.5vh;
+	margin: 0 0 2vh;
+	text-align: left;
 }
 
 #summary p {
 	text-align: left;
-	line-height: 1.5;
+	line-height: 1.5rem;
 }
 
+/* Experience Element */
+
+#experience {
+	background-attachment: fixed;
+	background-image: linear-gradient( rgba(0, 0, 0, .7), rgba(255, 255, 255, 1) ), url(../images/quote-tools.jpg);
+    background-position: left 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 4vh;
+	text-align: center;
+
+}
+
+#experience h3 {
+	font-size: 5vh;
+	color: ;
+}
+
+
+#experience .card {
+	background-color: white;
+	border: 1px solid var(--gray);
+	border-radius: 1rem;
+	box-shadow: 0rem 0rem 10px var(--gray);
+	margin: 1rem auto;
+	overflow: hidden;
+	text-align: center;
+	width: 50vw;
+}
+
+#experience img {
+	height: 25vh;
+}
+
+#experience .card a {
+	background-color: var(--yellow);
+	color: black;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+
+#experience .modal {
+	display: none;
+}
 
 /* Process Element */
 
 #process {
-
 	line-height: 1.5;
 }
 
@@ -153,55 +199,6 @@ header h1 {
 }
 
 
-/* Experience Element */
-
-#experience {
-	align-content: center;
-	align-items: center;
-	align-self: center;
-	background-attachment: fixed;
-	background-image: linear-gradient( rgba(255, 255, 255, .5), rgba(255, 255, 255, 1) ), url(../images/quote-keyboard.jpg);
-    background-position: left 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-	text-align: center;
-	width: 90%;
-
-}
-
-#experience h3 {
-	padding: 0 2rem;
-}
-
-
-#experience .card {
-	align-content: center;
-	align-items: center;
-	align-self: center;
-	background-color: white;
-	border: 1px solid var(--gray);
-	border-radius: 1rem;
-	box-shadow: 0rem 0rem 10px var(--gray);
-	margin: 1rem 0;
-	overflow: hidden;
-	text-align: center;
-}
-
-#experience img {
-	width: auto;
-}
-
-#experience .card a {
-	background-color: var(--yellow);
-	color: black;
-	display: block;
-	text-align: center;
-	text-decoration: none;
-}
-
-#experience .modal {
-	display: none;
-}
 
 /* Footer Element */
 

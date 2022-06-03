@@ -20,8 +20,9 @@ body {
 header {
 	background-color: var(--blue);
 	color: white;
-	height: 4rem;
-	margin-top: 1rem;
+	display: block;
+	height: 10vh;
+	margin-top: 2.5vh;
 	text-align: center;
 }
 
@@ -32,22 +33,24 @@ header::before {
 	therefore insertion by CSS allows it to be ignored entirely by screen readers */
 	background-image: url('../images/logoform.png');
 	background-repeat: no-repeat;
-	background-size: 6rem;
+	background-size: 10vh;
 	content: " ";
 	display: inline-block;
-	height: 6rem;
+	margin-top: 0;
+	height: 10vh;
+	padding: 0;
 	position: relative;
-	top: -1rem;
 	vertical-align: middle;
-	width: 6rem;
-
+	width: 10vh;
 }
 
 header h1 {
+	display: inline-block;
 	font-weight: 400;
-	font-size: 3.5rem;
-	display: inline;
-	padding: 0 1rem;
+	font-size: 6.5vh;
+	margin: 0;
+	padding: 0 1vh;
+	vertical-align: middle;
 }
 
 /* Hero Element */
@@ -60,14 +63,14 @@ header h1 {
     background-size: cover;
 	color: white;
 	margin: auto;
-	padding: 1rem;
+	padding: 1vh;
 }
 
 #hero h2 {
 	display: block;
-	font-size: 2.5rem;
+	font-size: 5vh;
 	font-weight: 400;
-	margin: 6rem auto;
+	margin: 10vh auto;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -77,7 +80,7 @@ header h1 {
 #summary {
 	align-self: center;
 	align-content: center;
-	margin: 0 5rem;
+	margin: 0 7.5vh;
 	text-align: center;
 }
 
@@ -90,7 +93,7 @@ header h1 {
 }
 
 #summary h3 {
-	font-size: 16pt;
+	font-size: 5ch;
 	margin: 0 0 1rem;
 	text-align: center;
 }
@@ -162,6 +165,7 @@ header h1 {
     background-repeat: no-repeat;
     background-size: cover;
 	text-align: center;
+	width: 90%;
 
 }
 

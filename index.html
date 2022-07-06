@@ -13,7 +13,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	<link rel='stylesheet' href='css/site.css'/>
 	<script>
-		/* TODO: Create function to open modal */
+		function modalLoad(elementId) {
+		    var modalParent = document.querySelector(elementId);
+		    var modal = modalParent.querySelector('.modal');
+		    (modal.style.display == 'block') ? modal.style.display = 'none' : modal.style.display = 'block';
+		}
 	</script>
 </head>
 
@@ -49,7 +53,7 @@
 
 				<div class="grid">
 					<!-- Flowserve card & modal -->
-					<div id="flowserve">
+					<div id="flowserve" onClick="modalLoad('#flowserve')">
 						<!-- card -->
 						<div class="card">
 							<img src="images/flowserve-teaser.png">
@@ -66,7 +70,7 @@
 					</div>
 
 					<!-- Lowes card and modal -->
-					<div id="lowes">
+					<div id="lowes" onClick="modalLoad('#lowes')">
 						<!-- card -->
 						<div class="card">
 							<img src="images/lowes-teaser.png">
@@ -83,7 +87,7 @@
 					</div>
 
 					<!-- iContact card and modal -->
-					<div id="icontact">
+					<div id="icontact" onClick="modalLoad('#icontact')">
 						<!-- card -->
 						<div class="card">
 							<img src="images/icontact-teaser.png">

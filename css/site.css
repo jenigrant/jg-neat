@@ -4,6 +4,7 @@
 	--yellow: rgb(251, 189, 8);
 	--green: rgb(0, 95, 38);
 	--gray: rgba(0, 0, 0, .25);
+	font-size: 2rem;
 }
 
 /* Basic Layout */
@@ -13,6 +14,10 @@ body {
 	font-family: Lato, Arial, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
+}
+
+ul, p {
+	line-height: 2rem;
 }
 
 /* Header Element and Navigation */
@@ -26,6 +31,7 @@ header {
 	position: fixed;
 	text-align: center;
 	width: 100vw;
+	z-index: 99;
 }
 
 
@@ -38,21 +44,14 @@ header::before {
 	background-size: 10vh;
 	content: " ";
 	display: inline-block;
+	filter: drop-shadow(0 1vh 1vw rgba(0,0,0,.5));
 	height: 10vh;
 	padding: 0;
 	position: relative;
 	top: -1.5vh;
 	vertical-align: middle;
 	width: 10vh;
-
-
-	/* Drop shadow on image, source: Stack Exchange */
-
-	-webkit-filter: drop-shadow(0 1vh 1vw rgba(0,0,0,.5));
-	-moz-filter: drop-shadow(0 1vh 1vw rgba(0,0,0,.5));
-	-ms-filter: drop-shadow(0 1vh 1vw rgba(0,0,0,.5));
-	-o-filter: drop-shadow(0 1vh 1vw rgba(0,0,0,.5));
-	filter: drop-shadow(0 1vh 1vw rgba(0,0,0,.5));
+	z-index: 100;
 }
 
 header h1 {
@@ -80,7 +79,7 @@ header h1 {
 	display: block;
 	font-size: 5vh;
 	font-weight: 400;
-	margin: 25vh auto 20vh auto;
+	margin: 25vh 2vw 20vh;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -90,7 +89,7 @@ header h1 {
 #summary {
 	align-self: center;
 	align-content: center;
-	margin: 2.5vh 7.5vh;
+	margin: 2.5vh 12.5vw;
 	text-align: center;
 }
 
@@ -107,7 +106,6 @@ header h1 {
 
 #summary p {
 	text-align: justify;
-	line-height: 1.5rem;
 }
 
 #summary #uxengineer::before {
@@ -118,7 +116,7 @@ header h1 {
 	content: '\1F465';
 	color: white;
 	display: inline-block;
-	font-size: 2.5ch;
+	font-size: 3vh;
 	height: 5vh;
 	vertical-align: middle;
 	width: 5vh;
@@ -132,7 +130,7 @@ header h1 {
 	content: '\1F4BB';
 	color: white;
 	display: inline-block;
-	font-size: 2.5ch;
+	font-size: 3vh;
 	height: 5vh;
 	vertical-align: middle;
 	width: 5vh;
@@ -146,7 +144,7 @@ header h1 {
 	content: '\1F497';
 	color: white;
 	display: inline-block;
-	font-size: 3ch;
+	font-size: 3.5vh;
 	height: 5vh;
 	vertical-align: middle;
 	width: 5vh;
@@ -160,43 +158,51 @@ header h1 {
     background-position: left 0;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 4vh;
+    padding: 4vh;
 	text-align: center;
 
 }
 
 #experience h3 {
 	color: white;
+	filter: drop-shadow(0 .5vh 1vw rgba(0,0,0,.9));
 	font-size: 5vh;
 	font-weight: 400;
+	margin: 5vh 5vw 7.5vh;
 	mix-blend-mode: luminosity;
-
-
-	filter: drop-shadow(0 .5vh 1vw rgba(0,0,0,.9));
+	z-index: -1;
 }
-
 
 #experience .card {
 	background-color: white;
 	border: 1px solid var(--gray);
 	border-radius: 1rem;
 	box-shadow: 0rem 0rem 10px var(--gray);
-	margin: 1rem auto;
+	margin: 5vh auto;
 	overflow: hidden;
 	text-align: center;
-	width: 50vw;
+	width: 75vw;
 }
 
 #experience img {
 	height: 25vh;
+	width: auto;
+}
+
+#experience .card p {
+	padding: 1.5vw;
 }
 
 #experience .card a {
 	background-color: var(--yellow);
 	color: black;
 	display: block;
+	font-size: 2vh;
+	height: 5vh;
+	padding-top: 2vh;
 	text-align: center;
 	text-decoration: none;
+	vertical-align: middle;
 }
 
 #experience .modal {
@@ -207,41 +213,47 @@ header h1 {
 
 #process {
 	line-height: 1.5;
+	margin: 2vh 12.5vw;
+	text-align: justify;
 }
 
 #process blockquote {
 /*	background-color: red;*/
-	margin: 0 5rem;
+/*	margin: 0 5rem;*/
 }
 
 #process blockquote p {
 	color: var(--red);
-	font-size: 29pt;
+	font-size: 5.5vh;
 	font-weight: 700;
-	text-align: justify;
+	line-height: 6vh;
+	text-align: left;
+
 }
+
+
+/* TODO: Fix blockquote quotes to create text effect;
 
 #process blockquote p::before {
 	content: "\201c";
 	font-family: serif !important;
-	line-height: .5;
+	/*line-height: .5;
 	position: relative;
-	right: 1rem;
-	top: 1.5rem;
+	left: -7vw;
 }
 
 #process blockquote p::after {
 	content: "\201d";
 	font-family: serif !important;
-	line-height: .5;
-	position: relative;
+/*	line-height: .5;*/
+/*	position: relative;
 	left: .3rem;
 	top: 1.5rem;
 }
 
 #process div > p {
 	margin:1rem 5rem;
-}
+}*/
 
 #process footer {
 	background-color: rgba(255,255,255,0);
@@ -255,12 +267,15 @@ header h1 {
 /* Footer Element */
 
 footer {
-	align-content: center;
-	align-items: center;
-	align-self: center;
 	background-color: var(--blue);
 	color: white;
-	display: grid;
-	margin-top: 2rem;
-	overflow: visible;
+
+}
+
+footer ul, footer p {
+	text-align: center;
+}
+
+footer ul li {
+	list-style: none;
 }

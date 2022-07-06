@@ -1,28 +1,22 @@
 /** Necessary & Complex **/
-Move Font Awesome to local copy and remove JS
-Redesign summary grid to be less text, mobile first
+Create grid for mid and large displays
 
 /** Ongoing for refactor **/
-Add list to header navigation
+Add header navigation
 Style header navigation
-Remove medium-sized grid
 Add subtle background to strong tag
-Adjust blockquote citation
 Add image descriptions to cards
-Adjust border & shadow
 Adjust modal link
 Add onClick action for modal
 Add images to modals
 Style modals
+Style blockquote quotation marks
+Update process text
 Make footer list inline
-Align right grid to right
 
 /** Clean it Up **/
-Comment CSS
-Alphabetize CSS attributes
-Move Google Lato to local copy
+Move Google Lato to local copy?
 
 /** Testing **/
-Check web server is ready
-Check on phones
-Check on Opera screen reader
+Screen reader
+SEO optimization

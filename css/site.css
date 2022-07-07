@@ -110,7 +110,7 @@ header ul li {
 
 #hero {
     background-attachment: fixed;
-    background-image: linear-gradient(rgba(0, 77, 111, .3), rgba(0, 0, 0, .9) ), url('../images/quote-keyboard.jpg');
+    background-image: linear-gradient(rgba(0, 77, 111, .75), rgba(0, 0, 0, .9) ), url('../images/quote-keyboard.jpg');
     background-position: left 7vh;
     background-repeat: no-repeat;
     background-size: cover;

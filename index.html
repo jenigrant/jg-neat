@@ -16,15 +16,11 @@
 		function modalLoad(elementId) {
 		    var modalParent = document.querySelector(elementId);
 		    var modal = modalParent.querySelector('.modal');
-		    console.log("display: " + modal.style.display);
 		    if (modal.style.display == "inline-grid") {
 		    	modal.style.display = "none";
-		    	console.log('modal display none');
 		    } else {
 		    	modal.style.display = "inline-grid";
-		    	console.log('modal display inline-grid');
 		    }
-		    return modal;
 		}
 	</script>
 </head>
@@ -82,14 +78,14 @@
 				<div id="flowserve" onClick="modalLoad('#flowserve')">
 					<!-- card -->
 					<div class="card">
-						<img src="images/flowserve-teaser.png">
+						<img src="images/flowserve-teaser.png" alt="Flowserve">
 						<p>Built a survey that could handle bidirectional language input using asynchronous methods &mdash; three years before AJAX.</p>
 						<a href="#modal_flowserve">Creative Strategy Innovations</a>
 					</div>
 
 					<!-- modal -->
 					<div class="modal">
-						<img src="images/flowserve.png">
+						<img src="images/flowserve.png" alt="Flowserve Annual Survey">
 						<h3>Flowserve Annual Customer Survey</h3>
 						<h4>Built an online survey that could handle bidirectional language input using asynchronous techiques&mdash;three years before AJAX.</h4>
 						<p>The Flowserve Customer Satisfaction Survey required bidirectional input for an international audience without specific language support. The resulting application could handle input in both RTL and LTR languages, and the language independent template displayed content properly regardless of directionality. Each set of questions and responses was stored in XML and accessed using asynchronous scripting, and translated into browser-ready HTML with XSLTs. The survey was sent to customers in over 20 different countries and received the highest response rate of any existing Flowserve customer surveys.</p>
@@ -100,14 +96,14 @@
 				<div id="lowes" onClick="modalLoad('#lowes')">
 					<!-- card -->
 					<div class="card">
-						<img src="images/lowes-teaser.png">
+						<img src="images/lowes-teaser.png" alt="Lowes">
 						<p>Integrated custom Adobe Analytics event tracking into three different front-end platforms for a Fortune 50 retailer site.</p>
 						<a href="#modal_lowes">Proven Production Standards</a>
 					</div>
 
 					<!-- modal -->
 					<div class="modal">
-						<img src="images/lowes.png">
+						<img src="images/lowes.png" alt="Lowes 2015 Redesign">
 						<h3>Lowe's Home Improvement Site Redesign</h3>
 						<h4>Integrated custom Adobe Analytics event tracking into three different front-end platforms for a Fortune 50 retailer site.</h4>
 						<p>The Lowe's Digital Analytics team was tasked with integrating complex event tracking into a rebuilt, redesigned site. Using Adobe Analytics to process incoming data, we created custom events using jQuery and implemented through Adobe Dynamic Tag Manager. Developing these custom events required working full-stack in three different platforms utilizing Adobe Experience Manager, node.js, and Websphere. I was tasked with creating a solution that allowed more in-depth interaction tracking in widgets from Adobe Target. This solution involved creating multiple plugins for Adobe Marketing Suite and pushing the capabilities of Adobe Analytics to the utmost. Upon launch, business partners were provided with a wealth of new data collection options, as well as reducing the load-time for consumers by a whopping 75%.</p>
@@ -118,14 +114,14 @@
 				<div id="icontact" onClick="modalLoad('#icontact')">
 					<!-- card -->
 					<div class="card">
-						<img src="images/icontact-teaser.png">
+						<img src="images/icontact-teaser.png" alt="iContact">
 						<p>Researched, prototyped, and built a user experience which pivoted a modest startup into a multi-million dollar company.</p>
 						<a href="#modal_icontact">Exponential Growth Record</a>
 					</div>
 
 					<!-- modal -->
 					<div class="modal">
-						<img src="images/icontact.png">
+						<img src="images/icontact.png" alt="iContact Pivot">
 						<h3>iContact Product Pivot</h3>
 						<h4>Researched, prototyped, and built a user experience which pivoted a modest startup into a multi-million dollar company.</h4>
 						<p>Shortly after its first million in sales, iContact decided to transition their product to a more mature UX designed around their customer's needs. After generating competitive analyses of key competitors and target competitive markets, I performed content auditing on existing marketing materials. To facilitate company buy-in of user-centered principles, I worked with back-end development in an Agile environment to create functional design patterns, define user flows, establish sitemaps, and other UX deliverables. Before launch, I conducted focus groups, informal “hallway” usability audits, formal usability testing, and A/B testing in order to verify and validate application features. Trial conversion rates increased by 200% during the first quarter after relaunch and doubled the number of paying customers in a less than a year.</p>

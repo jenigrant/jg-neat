@@ -3,13 +3,13 @@ Add image descriptions to cards
 Add image descriptions to modals
 Style blockquote quotation marks
 Update process text
-Make footer list inline
 Add menu reveal in mobile
-Two column modal for desktop
+Add icons for Linkedin and Mail
 
 /** Clean it Up **/
 Move Google Lato to local copy?
 Replace emojis in summary with ... something better
+Reduce header height a touch
 
 /** Testing **/
 Screen reader

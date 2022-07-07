@@ -17,9 +17,6 @@ body {
 	padding: 0;
 }
 
-li, p, div {
-	font-size: 1rem;
-}
 
 h1 {
 	font-size: 6.5vh;
@@ -33,11 +30,12 @@ h2 {
 
 h3 {
 	font-size: 3.5vh;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 h4 {
 	font-size: 2.5vh;
+	font-weight: 600;
 }
 
 h5 {
@@ -50,7 +48,7 @@ header {
 	background-color: var(--blue);
 	color: white;
 	display: block;
-	height: 8vh;
+	height: 9vh;
 	margin-top: 2.5vh;
 	position: fixed;
 	text-align: center;
@@ -72,7 +70,7 @@ header::before {
 	height: 10vh;
 	padding: 0;
 	position: relative;
-	top: -1.5vh;
+	top: -2.5vh;
 	vertical-align: middle;
 	width: 10vh;
 	z-index: 100;
@@ -214,6 +212,7 @@ header h1 {
 	border-bottom-left-radius: 1vh;
 	color: black;
 	display: block;
+	font-weight: 600;
 	padding: 2vh;
 	text-align: center;
 	text-decoration: none;
@@ -221,14 +220,20 @@ header h1 {
 }
 
 #experience .modal {
-	background-color: white;
-	box-shadow: 1vh 1vw 10vh black;
-	display: none;
-    left: -1vw;
-    margin: 2vh 12.5vw;
+    background-color: white;
+    box-shadow: 1vh 1vw 5vh black;
+    display: none;
+    overflow-y: scroll;
+    padding: 1vh 5vw;
     position: fixed;
-    top: 10vh;
-    width: 80vw;
+    top: 15vh;
+    left: 5vw;
+    right: 5vw;
+    bottom: 5vh;
+}
+
+#experience .modal p {
+	text-align: justify;
 }
 
 /* Process Element */

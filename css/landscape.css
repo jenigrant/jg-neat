@@ -4,24 +4,30 @@ header {
     vertical-align: middle;
 }
 
-header::before {
-    display: inline-block !important;
-    margin-left: 10vw;
+header h1::before {
+    /* FAQ: why was this not represented in the HTML?
+    A: because a logoform is semantically useless and not needed in a non-visual experience
+    therefore insertion by CSS allows it to be ignored entirely by screen readers */
+    background-size: 15vh;
+    height: 15vh;
+    width: 15vh;
 }
 
 header h1 {
     display: inline-grid;
     grid-column: 1;
+    margin-left: 7.5vw !important;
     text-align: left;
 }
 
 header ul {
     background-color: unset !important;
-    display: inline-grid;
+    display: inline-grid !important;
     grid-column: 2;
     text-decoration: none;
     grid-template-columns: repeat(3, 1fr);
     margin-right: 7vw !important;
+    margin-top: unset !important;
     padding: 0;
 }
 

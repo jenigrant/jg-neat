@@ -1,21 +1,36 @@
 header {
-    vertical-align: middle;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2);
+    vertical-align: middle;
 }
+
+header::before {
+    display: inline-block !important;
+    margin-left: 10vw;
+}
+
 header h1 {
     display: inline-grid;
     grid-column: 1;
+    text-align: left;
 }
 
 header ul {
+    background-color: unset !important;
+    display: inline-grid;
     grid-column: 2;
     text-decoration: none;
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 7vw !important;
+    padding: 0;
 }
 
 header ul li {
-    border: 1px solid red;
+    padding: 0 !important;
+    vertical-align: middle;
+    line-height: 10vh;
 }
+
 
 article {
 
@@ -24,7 +39,8 @@ article {
 #summary {
     display: inline-grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5vw;
+    gap: 3vw;
+    margin: 2.5vh 7.5vw !important;
 
 }
 
@@ -36,6 +52,11 @@ article {
     text-align: center;
     top: -3vh;
     z-index: -99;
+}
+
+#uxengineer, #ftenddev {
+    border-right:  1px solid #EEE;
+    padding-right: 2vw;
 }
 
 #experience {

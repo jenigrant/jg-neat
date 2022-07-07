@@ -16,12 +16,15 @@
 		function modalLoad(elementId) {
 		    var modalParent = document.querySelector(elementId);
 		    var modal = modalParent.querySelector('.modal');
-		    if (modal.style.display == "block") {
+		    console.log("display: " + modal.style.display);
+		    if (modal.style.display == "inline-grid") {
 		    	modal.style.display = "none";
+		    	console.log('modal display none');
 		    } else {
-		    	modal.style.display = "block";
+		    	modal.style.display = "inline-grid";
+		    	console.log('modal display inline-grid');
 		    }
-
+		    return modal;
 		}
 	</script>
 </head>
@@ -30,9 +33,9 @@
 	<header>
 		<h1>Jeni Grant</h1>
 		<ul>
-			<li>About Me</li>
-			<li>Experience</li>
-			<li>Contact</li>
+			<li><a href="#summary">About Me</a></li>
+			<li><a href="#experience">Experience</a></li>
+			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</header>
 
@@ -134,17 +137,16 @@
 	</main>
 
 	<footer>
-			<section id="contact" >
-				<ul>
-					<li><a></i>Mx Jeni Grant (they/them)</a></li>
-					<li><a href="mailto:hello@jenigrant.com"></i>hello@jenigrant.com</a></li>
-					<li><a href="https://linkedin.com/in/jenigrant"></i>Linkedin: Jeni Grant</a></li>
-				</ul>
-			</section>
-			<section id="copyright">
-				<p>Copyright Jeni Grant, 2014-2022.<br>
-				Please feed the coder. They're swell.</p>
-			</section>
+		<section id="contact">
+			<ul>
+				<li><a href="https://linkedin.com/in/jenigrant"></i>Mx Jeni Grant (they/them)</a></li>
+				<li><a href="mailto:hello@jenigrant.com"></i>hello@jenigrant.com</a></li>
+			</ul>
+		</section>
+		<section id="copyright">
+			<p>Copyright Jeni Grant, 2014-2022.<br>
+			Please feed the coder. They're swell.</p>
+		</section>
 	</footer>
 </body>
 </html>

@@ -5,9 +5,6 @@ header {
 }
 
 header h1::before {
-    /* FAQ: why was this not represented in the HTML?
-    A: because a logoform is semantically useless and not needed in a non-visual experience
-    therefore insertion by CSS allows it to be ignored entirely by screen readers */
     background-size: 15vh;
     height: 15vh;
     width: 15vh;
@@ -24,10 +21,10 @@ header ul {
     background-color: unset !important;
     display: inline-grid !important;
     grid-column: 2;
-    text-decoration: none;
     grid-template-columns: repeat(3, 1fr);
     margin-right: 7vw !important;
     margin-top: unset !important;
+    text-decoration: none;
     padding: 0;
 }
 
@@ -46,7 +43,7 @@ article {
     display: inline-grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3vw;
-    margin: 2.5vh 7.5vw !important;
+    margin: 2.5vh 5vw !important;
 
 }
 
@@ -61,8 +58,8 @@ article {
 }
 
 #uxengineer, #ftenddev {
-    border-right:  1px solid #EEE;
-    padding-right: 2vw;
+    border-right: 1px solid rgba(0,0,0,.25);
+    padding-right: 3vw;
 }
 
 #experience {
@@ -92,12 +89,72 @@ article {
     grid-row: 2;
 }
 
+#experience .modal {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr 1fr 2fr);
+    vertical-align: middle !important;
+    column-gap: 2vw;
+}
+
+#experience .modal img {
+    grid-column: 1;
+    grid-row: span 3;
+    margin: auto;
+}
+
+#experience .modal h3 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#experience .modal h4 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#experience .modal p {
+    grid-column: 2;
+    grid-row: 3 span 2;
+}
+
 #process {
     display: inline-grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 3vw;
 
 }
 
-footer {
+/* Footer Element */
 
+body > footer {
+    display: inline-grid;
+    grid-template-columns: repeat(1, 2fr 1fr);
+}
+
+footer #contact  {
+
+}
+
+footer #contact ul {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+}
+
+footer #contact ul li {
+    display: inline-block;
+    padding: 1vh 1vw;
+}
+
+footer #contact ul li a {
+    display: inline-block;
+}
+
+footer #copyright {
+    grid-column: 4 span 2;
+    text-align: right !important;
+}
+
+
+blockquote footer {
+    display: inline-block !important;
 }

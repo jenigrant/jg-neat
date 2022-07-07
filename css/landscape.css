@@ -1,0 +1,51 @@
+header {
+    background-color: red !important;
+}
+
+article {
+
+}
+
+#summary {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5vw;
+
+}
+
+#experience {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5vw;
+}
+
+#experience h2 {
+    border: 1px solid red;
+    grid-row: 1;
+    grid-column: span 3;
+}
+
+#experience #flowserve {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#experience #lowes {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#experience #icontact {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#process {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+footer {
+
+}

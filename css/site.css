@@ -1,6 +1,9 @@
+@import 'landscape.css' screen and (orientation: landscape);
+
 :root {
 	--red: rgb(133, 25, 0);
 	--blue: rgb(0, 77, 111);
+	--light-blue: rgba(0, 77, 111, .10);
 	--yellow: rgb(251, 189, 8);
 	--green: rgb(0, 95, 38);
 	--gray: rgba(0, 0, 0, .25);
@@ -40,6 +43,15 @@ h4 {
 
 h5 {
 
+}
+
+strong {
+	background-color: var(--light-blue);
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
 /* Header Element and Navigation */
@@ -185,7 +197,6 @@ header h1 {
 	filter: drop-shadow(0 .5vh 1vw rgba(0,0,0,.9));
 	margin: 5vh 5vw 7.5vh;
 	mix-blend-mode: luminosity;
-	z-index: -1;
 }
 
 #experience .card {
@@ -198,8 +209,9 @@ header h1 {
 }
 
 #experience img {
-	height: 25vh;
-	width: auto;
+	border-top-left-radius: 1vh;
+	border-top-right-radius: 1vh;
+	width: 100%;
 }
 
 #experience .card p {
@@ -221,6 +233,7 @@ header h1 {
 
 #experience .modal {
     background-color: white;
+    border-radius: 1vh;
     box-shadow: 1vh 1vw 5vh black;
     display: none;
     overflow-y: scroll;
@@ -281,7 +294,7 @@ header h1 {
 	margin:1rem 5rem;
 }*/
 
-#process footer {
+#process blockquote footer {
 	background-color: rgba(255,255,255,0);
 	color: var(--red);
 	display: block;
@@ -295,13 +308,18 @@ header h1 {
 footer {
 	background-color: var(--blue);
 	color: white;
+	padding: .5vh 0vw;
 
 }
 
 footer ul, footer p {
 	text-align: center;
+	text-indent: none;
+	list-style: none;
 }
 
 footer ul li {
+	text-indent: none;
 	list-style: none;
 }
+

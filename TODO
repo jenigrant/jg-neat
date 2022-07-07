@@ -4,16 +4,15 @@ Create grid for mid and large displays
 /** Ongoing for refactor **/
 Add header navigation
 Style header navigation
-Add subtle background to strong tag
 Add image descriptions to cards
-Add images & descriptions to modals
+Add descriptions to modals
 Style blockquote quotation marks
 Update process text
 Make footer list inline
 
 /** Clean it Up **/
 Move Google Lato to local copy?
-Font sizes all over the palce
+Replace emojis in summary with ... something better
 
 /** Testing **/
 Screen reader

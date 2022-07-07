@@ -4,7 +4,6 @@
 	--yellow: rgb(251, 189, 8);
 	--green: rgb(0, 95, 38);
 	--gray: rgba(0, 0, 0, .25);
-	font-size: 2rem;
 }
 
 /* Basic Layout */
@@ -12,12 +11,37 @@
 body {
 	align-items: center;
 	font-family: Lato, Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
 	margin: 0;
 	padding: 0;
 }
 
-ul, p {
-	line-height: 2rem;
+li, p, div {
+	font-size: 1rem;
+}
+
+h1 {
+	font-size: 6.5vh;
+	font-weight: 500;
+}
+
+h2 {
+	font-size: 5vh;
+	font-weight: 500;
+}
+
+h3 {
+	font-size: 3.5vh;
+	font-weight: 500;
+}
+
+h4 {
+	font-size: 2.5vh;
+}
+
+h5 {
+
 }
 
 /* Header Element and Navigation */
@@ -56,8 +80,6 @@ header::before {
 
 header h1 {
 	display: inline-block;
-	font-weight: 400;
-	font-size: 6.5vh;
 	margin: 0;
 	padding: 0 2vw;
 }
@@ -77,8 +99,6 @@ header h1 {
 
 #hero h2 {
 	display: block;
-	font-size: 5vh;
-	font-weight: 400;
 	margin: 25vh 2vw 20vh;
 	text-align: center;
 	vertical-align: middle;
@@ -95,7 +115,6 @@ header h1 {
 
 #summary h3 {
 	border-top: 1px solid black;
-	font-size: 3.5vh;
 	margin: 0 0 1.5vh;
 	padding-top: 3vh;
 	position: relative;
@@ -163,11 +182,9 @@ header h1 {
 
 }
 
-#experience h3 {
+#experience h2 {
 	color: white;
 	filter: drop-shadow(0 .5vh 1vw rgba(0,0,0,.9));
-	font-size: 5vh;
-	font-weight: 400;
 	margin: 5vh 5vw 7.5vh;
 	mix-blend-mode: luminosity;
 	z-index: -1;
@@ -176,12 +193,10 @@ header h1 {
 #experience .card {
 	background-color: white;
 	border: 1px solid var(--gray);
-	border-radius: 1rem;
+	border-radius: 1vh;
 	box-shadow: 0rem 0rem 10px var(--gray);
 	margin: 5vh auto;
-	overflow: hidden;
 	text-align: center;
-	width: 75vw;
 }
 
 #experience img {
@@ -195,24 +210,30 @@ header h1 {
 
 #experience .card a {
 	background-color: var(--yellow);
+	border-bottom-right-radius: 1vh;
+	border-bottom-left-radius: 1vh;
 	color: black;
 	display: block;
-	font-size: 2vh;
-	height: 5vh;
-	padding-top: 2vh;
+	padding: 2vh;
 	text-align: center;
 	text-decoration: none;
 	vertical-align: middle;
 }
 
 #experience .modal {
+	background-color: white;
+	box-shadow: 1vh 1vw 10vh black;
 	display: none;
+    left: -1vw;
+    margin: 2vh 12.5vw;
+    position: fixed;
+    top: 10vh;
+    width: 80vw;
 }
 
 /* Process Element */
 
 #process {
-	line-height: 1.5;
 	margin: 2vh 12.5vw;
 	text-align: justify;
 }

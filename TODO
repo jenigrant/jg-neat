@@ -7,7 +7,6 @@ Style header navigation
 Add subtle background to strong tag
 Add image descriptions to cards
 Adjust modal link
-Add onClick action for modal
 Add images to modals
 Style modals
 Style blockquote quotation marks
@@ -16,6 +15,7 @@ Make footer list inline
 
 /** Clean it Up **/
 Move Google Lato to local copy?
+Font sizes all over the palce
 
 /** Testing **/
 Screen reader

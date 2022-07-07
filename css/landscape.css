@@ -13,6 +13,16 @@ article {
 
 }
 
+#summary h3 {
+    border-top: 0 !important;
+    margin: 0 0 1.5vh;
+    padding-top: 3vh;
+    position: relative;
+    text-align: center;
+    top: -3vh;
+    z-index: -99;
+}
+
 #experience {
     display: inline-grid;
     grid-template-columns: repeat(3, 1fr);
@@ -20,7 +30,7 @@ article {
 }
 
 #experience h2 {
-    border: 1px solid red;
+    gap: 0;
     grid-row: 1;
     grid-column: span 3;
 }

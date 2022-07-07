@@ -182,21 +182,9 @@ header h1 {
 /* Experience Element */
 
 #experience {
-	background-attachment: fixed;
-	background-image: linear-gradient( rgba(0, 0, 0, .7), rgba(255, 255, 255, 1) ), url(../images/quote-tools.jpg);
-    background-position: left 0;
-    background-repeat: no-repeat;
-    background-size: cover;
     padding: 4vh;
 	text-align: center;
 
-}
-
-#experience h2 {
-	color: white;
-	filter: drop-shadow(0 .5vh 1vw rgba(0,0,0,.9));
-	margin: 5vh 5vw 7.5vh;
-	mix-blend-mode: luminosity;
 }
 
 #experience .card {
@@ -252,7 +240,12 @@ header h1 {
 /* Process Element */
 
 #process {
-	margin: 2vh 12.5vw;
+	background-attachment: fixed;
+	background-image: linear-gradient( rgba(255, 255, 255, .7), rgba(255, 255, 255, 1) ), url(../images/quote-tools.jpg);
+    background-position: left 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1vh 5vw;
 	text-align: justify;
 }
 

@@ -7,6 +7,8 @@
 	--yellow: rgb(251, 189, 8);
 	--green: rgb(0, 95, 38);
 	--gray: rgba(0, 0, 0, .25);
+	margin: 0;
+	padding: 0;
 }
 
 /* Basic Layout */
@@ -19,19 +21,18 @@ body {
 	padding: 0;
 }
 
-
 h1 {
-	font-size: 6.5vh;
+	font-size: 7vh;
 	font-weight: 500;
 }
 
 h2 {
-	font-size: 5vh;
-	font-weight: 500;
+	font-size: 6vh;
+	font-weight: 600;
 }
 
 h3 {
-	font-size: 3.5vh;
+	font-size: 3vh;
 	font-weight: 600;
 }
 
@@ -58,8 +59,7 @@ a {
 header {
 	background-color: var(--blue);
 	color: white;
-	display: block;
-	height: 9vh;
+	height: 10vh;
 	margin-top: 2.5vh;
 	position: fixed;
 	text-align: center;
@@ -67,46 +67,41 @@ header {
 	z-index: 99;
 }
 
-
-header::before {
+header h1::before {
 	/* FAQ: why was this not represented in the HTML?
 	A: because a logoform is semantically useless and not needed in a non-visual experience
 	therefore insertion by CSS allows it to be ignored entirely by screen readers */
 	background-image: url('../images/logoform.png');
 	background-repeat: no-repeat;
-	background-size: 10vh;
+	background-size: 15vh;
 	content: " ";
 	display: inline-block;
 	filter: drop-shadow(0 1vh 1vw rgba(0,0,0,.5));
-	height: 10vh;
-	padding: 0;
+	height: 15vh;
+	padding: 0 1vw;
 	position: relative;
-	top: -2.5vh;
-	vertical-align: middle;
-	width: 10vh;
+	top: -1.75vh;
+	vertical-align: top;
+	width: 15vh;
 	z-index: 100;
 }
 
 header h1 {
 	display: inline-block;
 	margin: 0;
-	padding: 0 1vw;
-
+	margin-left: 7.5vw;
 }
 
 header ul {
 	background-color: var(--gray);
 	list-style-type: none;
-	text-indent: 0;
 	margin: 0;
-	position: relative;
-	top: -3vh;
+	padding: 0;
+	text-indent: 0;
+	vertical-align: middle;
 }
 
 header ul li {
-	display: block;
-	text-decoration: none;
-
 	padding: 1vh 2vw;
 }
 
@@ -125,7 +120,8 @@ header ul li {
 
 #hero h2 {
 	display: block;
-	margin: 25vh 2vw 20vh;
+	font-weight: 500;
+	margin: 25vh 5vw 20vh;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -200,7 +196,10 @@ header ul li {
 #experience {
     padding: 4vh;
 	text-align: center;
+}
 
+#experience h2 {
+	margin: 0;
 }
 
 #experience .card {

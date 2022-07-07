@@ -1,5 +1,20 @@
 header {
-    background-color: red !important;
+    vertical-align: middle;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+header h1 {
+    display: inline-grid;
+    grid-column: 1;
+}
+
+header ul {
+    grid-column: 2;
+    text-decoration: none;
+}
+
+header ul li {
+    border: 1px solid red;
 }
 
 article {

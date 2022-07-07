@@ -14,7 +14,6 @@
 body {
 	align-items: center;
 	font-family: Lato, Arial, Helvetica, sans-serif;
-	font-size: 1rem;
 	line-height: 1.5;
 	margin: 0;
 	padding: 0;
@@ -91,7 +90,24 @@ header::before {
 header h1 {
 	display: inline-block;
 	margin: 0;
-	padding: 0 2vw;
+	padding: 0 1vw;
+
+}
+
+header ul {
+	background-color: var(--gray);
+	list-style-type: none;
+	text-indent: 0;
+	margin: 0;
+	position: relative;
+	top: -3vh;
+}
+
+header ul li {
+	display: block;
+	text-decoration: none;
+
+	padding: 1vh 2vw;
 }
 
 /* Hero Element */

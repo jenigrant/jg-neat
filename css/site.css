@@ -155,13 +155,13 @@ header ul li {
 	border-radius: 5vh;
 	border-color: var(--red);
 	border: 1vh solid white;
-	content: '\1F465';
+	content: url('../images/users.svg');
 	color: white;
 	display: inline-block;
-	font-size: 3vh;
-	height: 5vh;
+	padding: 1.5vh .9vw 1vh .9vw;
+	height: 3vh;
 	vertical-align: middle;
-	width: 5vh;
+	width: 3vh;
 }
 
 #summary #ftenddev::before {
@@ -169,13 +169,13 @@ header ul li {
 	border-radius: 5vh;
 	border-color: var(--yellow);
 	border: 1vh solid white;
-	content: '\1F4BB';
+	content: url('../images/desktop.svg');
 	color: white;
 	display: inline-block;
-	font-size: 3vh;
-	height: 5vh;
+	padding: 1.5vh 1vw;
+	height: 3vh;
 	vertical-align: middle;
-	width: 5vh;
+	width: 3vh;
 }
 
 #summary #passion::before {
@@ -183,13 +183,13 @@ header ul li {
 	border-radius: 5vh;
 	border-color: var(--green);
 	border: 1vh solid white;
-	content: '\1F497';
+	content: url('../images/heart.svg');
 	color: white;
 	display: inline-block;
-	font-size: 3.5vh;
-	height: 5vh;
+	padding: 1.5vh 1vw;
+	height: 3vh;
 	vertical-align: middle;
-	width: 5vh;
+	width: 3vh;
 }
 
 /* Process Element */

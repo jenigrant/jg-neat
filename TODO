@@ -1,5 +1,4 @@
 /** Ongoing for refactor **/
-Add image descriptions to cards
 Add image descriptions to modals
 Style blockquote quotation marks
 Update process text
@@ -8,8 +7,8 @@ Add icons for Linkedin and Mail
 
 /** Clean it Up **/
 Move Google Lato to local copy?
-Replace emojis in summary with ... something better
 Reduce header height a touch
+Third column in summary too wide
 
 /** Testing **/
 Screen reader

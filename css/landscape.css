@@ -43,7 +43,7 @@ article {
     display: inline-grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3vw;
-    margin: 2.5vh 5vw !important;
+    margin: 2.5vh 2vw 2vh 5vw!important;
 
 }
 
@@ -59,6 +59,10 @@ article {
 
 #uxengineer, #ftenddev {
     border-right: 1px solid rgba(0,0,0,.25);
+    padding-right: 3vw;
+}
+
+#passion {
     padding-right: 3vw;
 }
 

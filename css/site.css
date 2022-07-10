@@ -16,13 +16,14 @@
 body {
 	align-items: center;
 	font-family: Lato, Arial, Helvetica, sans-serif;
+	font-size: 1.25rem;
 	line-height: 1.5;
 	margin: 0;
 	padding: 0;
 }
 
-h1 {
-	font-size: 7vh;
+/*h1 {
+	font-size: 3rem;
 	font-weight: 500;
 }
 
@@ -43,7 +44,7 @@ h4 {
 
 h5 {
 
-}
+}*/
 
 strong {
 	background-color: var(--light-blue);
@@ -210,7 +211,7 @@ header ul li {
 
 #process blockquote p {
 	color: var(--red);
-	font-size: 5.5vh;
+/*	font-size: 5.5vh;*/
 	font-weight: 700;
 	line-height: 6vh;
 	text-align: left;
@@ -270,7 +271,7 @@ header ul li {
 #experience .card img {
 	border-top-left-radius: 1vh;
 	border-top-right-radius: 1vh;
-	width: 100%;
+	max-width: 100%;
 }
 
 #experience .card p {
@@ -305,7 +306,7 @@ header ul li {
 }
 
 #experience .modal img {
-	width: 100%;
+	max-width: 100%;
 }
 
 #experience .modal p {

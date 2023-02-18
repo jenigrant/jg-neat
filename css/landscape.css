@@ -1,20 +1,12 @@
+
 header {
     display: grid;
     grid-template-columns: repeat(2);
-    vertical-align: middle;
-}
-
-header h1::before {
-    background-size: 15vh;
-    height: 15vh;
-    width: 15vh;
 }
 
 header h1 {
     display: inline-grid;
     grid-column: 1;
-    margin-left: 7.5vw !important;
-    text-align: left;
 }
 
 header ul {
@@ -26,17 +18,12 @@ header ul {
     margin-top: unset !important;
     text-decoration: none;
     padding: 0;
+    vertical-align: middle;
 }
 
 header ul li {
     padding: 0 !important;
     vertical-align: middle;
-    line-height: 10vh;
-}
-
-
-article {
-
 }
 
 #summary {

@@ -1,222 +1,224 @@
-@import 'landscape.css' screen and (orientation: landscape);
+@import "landscape.css" screen and (orientation: landscape);
 
 :root {
-	--red: rgb(133, 25, 0);
-	--blue: rgb(0, 77, 111);
-	--light-blue: rgba(0, 77, 111, .10);
-	--yellow: rgb(251, 189, 8);
-	--green: rgb(0, 95, 38);
-	--gray: rgba(0, 0, 0, .25);
-	margin: 0;
-	padding: 0;
+  --red: rgb(133, 25, 0);
+  --blue: rgb(0, 77, 111);
+  --light-blue: rgba(0, 77, 111, 0.1);
+  --yellow: rgb(251, 189, 8);
+  --green: rgb(0, 95, 38);
+  --gray: rgba(0, 0, 0, 0.25);
+  margin: 0;
+  padding: 0;
 }
 
 /* Basic Layout */
 
 body {
-	align-items: center;
-	font-family: Lato, Arial, Helvetica, sans-serif;
-	font-size: 1.25rem;
-	line-height: 1.5;
-	margin: 0;
-	padding: 0;
+  align-items: center;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
-/*h1 {
-	font-size: 3rem;
-	font-weight: 500;
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
 }
 
 h2 {
-	font-size: 6vh;
-	font-weight: 600;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 h3 {
-	font-size: 3vh;
-	font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 h4 {
-	font-size: 2.5vh;
-	font-weight: 600;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
-h5 {
-
-}*/
-
 strong {
-	background-color: var(--light-blue);
+  background-color: var(--light-blue);
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Header Element and Navigation */
 
 header {
-	background-color: var(--blue);
-	color: white;
-	height: 10vh;
-	margin-top: 2.5vh;
-	position: fixed;
-	text-align: center;
-	width: 100vw;
-	z-index: 99;
+  border-top: 3vh solid white;
+  background-color: var(--blue);
+  color: white;
+  height: 11.5vh;
+  position: fixed;
+  text-align: center;
+  width: 100vw;
+  z-index: 99;
 }
 
-header h1::before {
-	/* FAQ: why was this not represented in the HTML?
-	A: because a logoform is semantically useless and not needed in a non-visual experience
-	therefore insertion by CSS allows it to be ignored entirely by screen readers */
-	background-image: url('../images/logoform.png');
-	background-repeat: no-repeat;
-	background-size: 12vh;
-	content: " ";
-	display: inline-block;
-	filter: drop-shadow(0 1vh 1vw rgba(0,0,0,.5));
-	height: 12vh;
-	padding: 0 1vw;
-	position: relative;
-	top: -1.75vh;
-	vertical-align: top;
-	width: 12vh;
-	z-index: 100;
+header #logo {
+  display: inline block;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+header img {
+  display: flex;
+  filter: drop-shadow(0 1vh 1vw rgba(0, 0, 0, 0.8));
+  float: left;
+  height: 15vh;
+  margin: -1vh 0 0 2rem;
+  padding: 0;
+  vertical-align: middle;
+  z-index: 100;
 }
 
 header h1 {
-	display: inline-block;
-	margin: 0;
+  display: flex;
+  font-size: 8vh;
+  margin: 0;
+  padding: 0 0 0 2rem;
+  vertical-align: middle;
 }
 
 header ul {
-	background-color: var(--gray);
-	display: none;
-	list-style-type: none;
-	margin: 0;
-	margin-top: -2vh;
-	padding: 0;
-	text-indent: 0;
-	vertical-align: middle;
+  background-color: var(--gray);
+  display: none;
+  list-style-type: none;
+  line-height: 11.5vh;
+  margin: 0;
+  margin-top: 0;
+  padding: 0;
+  text-indent: 0;
 }
 
 header ul li {
-	padding: 1vh 2vw;
+  padding: 0;
 }
 
 /* Hero Element */
 
 #hero {
-    background-attachment: fixed;
-    background-image: linear-gradient(rgba(0, 77, 111, .75), rgba(0, 0, 0, .9) ), url('../images/quote-keyboard.jpg');
-    background-position: left 7vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-	color: white;
-	margin: auto;
-	padding: 1vh;
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 77, 111, 0.75), rgba(0, 0, 0, 0.9)),
+    url("../images/quote-keyboard.jpg");
+  background-position: left 7vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin: auto;
+  padding: 1vh;
 }
 
 #hero h2 {
-	display: block;
-	font-weight: 500;
-	margin: 25vh 5vw 20vh;
-	text-align: center;
-	vertical-align: middle;
+  display: block;
+  font-weight: 500;
+  margin: 25vh 5vw 20vh;
+  text-align: center;
+  vertical-align: middle;
 }
 
 /* Personal Summary Element */
 
 #summary {
-	align-self: center;
-	align-content: center;
-	margin: 2.5vh 10vw;
-	text-align: center;
+  align-self: center;
+  align-content: center;
+  margin: 2.5vh 10vw;
+  text-align: center;
 }
 
 #summary h3 {
-	border-top: 1px solid rgba(0, 0, 0, 0.25);
-	margin: 0;
-	padding-top: 4vh;
-	position: relative;
-	text-align: center;
-	top: -4vh;
-	z-index: -99;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  margin: 0;
+  padding-top: 4vh;
+  position: relative;
+  text-align: center;
+  top: -4vh;
+  z-index: -99;
 }
 
 #summary p {
-	text-align: justify;
+  text-align: justify;
 }
 
 #summary #uxengineer::before {
-	background-color: var(--red);
-	border-radius: 5vh;
-	border-color: var(--red);
-	border: 1vh solid white;
-	content: url('../images/users.svg');
-	color: white;
-	display: inline-block;
-	padding: 1.5vh;
-	height: 3vh;
-	vertical-align: middle;
-	width: 3vh;
+  background-color: var(--red);
+  border-radius: 5vh;
+  border-color: var(--red);
+  border: 1vh solid white;
+  content: url("../images/users.svg");
+  color: white;
+  display: inline-block;
+  padding: 1.5vh;
+  height: 3vh;
+  vertical-align: middle;
+  width: 3vh;
 }
 
 #summary #ftenddev::before {
-	background-color: var(--yellow);
-	border-radius: 5vh;
-	border-color: var(--yellow);
-	border: 1vh solid white;
-	content: url('../images/desktop.svg');
-	color: white;
-	display: inline-block;
-	padding: 1.5vh;
-	height: 3vh;
-	vertical-align: middle;
-	width: 3vh;
+  background-color: var(--yellow);
+  border-radius: 5vh;
+  border-color: var(--yellow);
+  border: 1vh solid white;
+  content: url("../images/desktop.svg");
+  color: white;
+  display: inline-block;
+  padding: 1.5vh;
+  height: 3vh;
+  vertical-align: middle;
+  width: 3vh;
 }
 
 #summary #passion::before {
-	background-color: var(--green);
-	border-radius: 5vh;
-	border-color: var(--green);
-	border: 1vh solid white;
-	content: url('../images/heart.svg');
-	color: white;
-	display: inline-block;
-	padding: 1.5vh;
-	height: 3vh;
-	vertical-align: middle;
-	width: 3vh;
+  background-color: var(--green);
+  border-radius: 5vh;
+  border-color: var(--green);
+  border: 1vh solid white;
+  content: url("../images/heart.svg");
+  color: white;
+  display: inline-block;
+  padding: 1.5vh;
+  height: 3vh;
+  vertical-align: middle;
+  width: 3vh;
 }
 
 /* Process Element */
 
 #process {
-	background-attachment: fixed;
-	background-image: linear-gradient( rgba(255, 255, 255, .6), rgba(255, 255, 255, 1) ), url(../images/quote-tools.jpg);
-    background-position: left 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 1vh 10vw;
-	text-align: justify;
+  background-attachment: fixed;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 1)
+    ),
+    url(../images/quote-tools.jpg);
+  background-position: left 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1vh 10vw;
+  text-align: justify;
 }
 
 #process blockquote {
-	margin: 0;
+  margin: 0;
 }
 
 #process blockquote p {
-	color: var(--red);
-/*	font-size: 5.5vh;*/
-	font-weight: 700;
-	line-height: 6vh;
-	text-align: left;
+  color: var(--red);
+  /*	font-size: 5.5vh;*/
+  font-weight: 700;
+  line-height: 6vh;
+  text-align: left;
 }
-
 
 /* TODO: Fix blockquote quotes to create text effect;
 
@@ -242,94 +244,94 @@ header ul li {
 }*/
 
 #process blockquote footer {
-	background-color: rgba(255,255,255,0);
-	color: var(--red);
-	display: block;
-	text-align: right;
+  background-color: rgba(255, 255, 255, 0);
+  color: var(--red);
+  display: block;
+  text-align: right;
 }
 
 /* Experience Element */
 
 #experience {
-    padding: 4vh;
-	text-align: center;
+  padding: 4vh;
+  text-align: center;
 }
 
 #experience h2 {
-	margin: 0;
+  margin: 0;
 }
 
 #experience .card {
-	background-color: white;
-	border: 1px solid var(--gray);
-	border-radius: 1vh;
-	box-shadow: 0rem 0rem 10px var(--gray);
-	margin: 5vh auto;
-	text-align: center;
+  background-color: white;
+  border: 1px solid var(--gray);
+  border-radius: 1vh;
+  box-shadow: 0rem 0rem 10px var(--gray);
+  margin: 5vh auto;
+  text-align: center;
 }
 
 #experience .card img {
-	border-top-left-radius: 1vh;
-	border-top-right-radius: 1vh;
-	max-width: 100%;
+  border-top-left-radius: 1vh;
+  border-top-right-radius: 1vh;
+  max-width: 100%;
 }
 
 #experience .card p {
-	padding: 1.5vw;
+  padding: 1.5vw;
 }
 
 #experience .card a {
-	background-color: var(--yellow);
-	border-bottom-right-radius: 1vh;
-	border-bottom-left-radius: 1vh;
-	color: black;
-	display: block;
-	font-weight: 600;
-	padding: 2vh;
-	text-align: center;
-	text-decoration: none;
-	vertical-align: middle;
+  background-color: var(--yellow);
+  border-bottom-right-radius: 1vh;
+  border-bottom-left-radius: 1vh;
+  color: black;
+  display: block;
+  font-weight: 600;
+  padding: 2vh;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
 }
 
 #experience .modal {
-    background-color: white;
-    border-radius: 1vh;
-    box-shadow: 1vh 1vw 5vh black;
-    display: none;
-    overflow: auto;
-    padding: 1vh 5vw;
-    position: fixed;
-    top: 15vh;
-    left: 5vw;
-    right: 5vw;
-    bottom: 5vh;
+  background-color: white;
+  border-radius: 1vh;
+  box-shadow: 1vh 1vw 5vh black;
+  display: none;
+  overflow: auto;
+  padding: 1vh 5vw;
+  position: fixed;
+  top: 15vh;
+  left: 5vw;
+  right: 5vw;
+  bottom: 5vh;
 }
 
 #experience .modal img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 #experience .modal p {
-	text-align: justify;
+  text-align: justify;
 }
 
 /* Footer Element */
 
 footer {
-	background-color: var(--blue);
-	color: white;
-	padding: .5vh 0vw;
-	width: 100%;
+  background-color: var(--blue);
+  color: white;
+  padding: 0.5vh 0vw;
+  width: 100%;
 }
 
-footer ul, footer p {
-	text-align: center;
-	text-indent: none;
-	list-style: none;
+footer ul,
+footer p {
+  text-align: center;
+  text-indent: none;
+  list-style: none;
 }
 
 footer ul li {
-	text-indent: none;
-	list-style: none;
+  text-indent: none;
+  list-style: none;
 }
-
